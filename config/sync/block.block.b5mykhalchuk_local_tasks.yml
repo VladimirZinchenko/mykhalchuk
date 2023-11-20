@@ -1,0 +1,22 @@
+uuid: bfa33c7f-66c3-419e-9907-5664b549e7c5
+langcode: en
+status: true
+dependencies:
+  theme:
+    - b5mykhalchuk
+_core:
+  default_config_hash: yfxuAA6mUbpDXz2xW41UGwOwjJnULQCcG3OCLikkdx8
+id: b5mykhalchuk_local_tasks
+theme: b5mykhalchuk
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

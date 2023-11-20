@@ -1,0 +1,27 @@
+uuid: 7eb68f5d-77fe-4e5f-a3af-3b3f12770d66
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - b5mykhalchuk
+_core:
+  default_config_hash: DYBgbIgBDohMJZ8_JZloG25iBHchG-ESclXB1cu_wNQ
+id: b5mykhalchuk_main_navigation
+theme: b5mykhalchuk
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: 7a058a39-17ab-48f6-9f20-a9f4a3341ca6
+langcode: en
+status: true
+dependencies: {  }
+id: g3XYqcXbSKPVBDODwnT6pq7oqhCFkPryj4vVqrl_Kfc
+label: 'https://mykhalchuk.ddev.site'
+context:
+  language: en

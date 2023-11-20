@@ -1,0 +1,92 @@
+// Custom variables (overrides).
+
+form.contact-message-feedback-form {
+	@include media-breakpoint-up(md) {
+		margin: auto;
+		width: 50%;
+	}
+}
+::marker {
+	color: #fd7e14;
+}
+.parallax {
+	background-attachment: fixed;
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	@include media-breakpoint-up(lg) {
+		height: 600px;
+	}
+}
+.parallax-bg-1 {
+	background-image: url("/img/parallax-bg-1.jpg");
+}
+.parallax-bg-2 {
+	background-image: url("/img/parallax-bg-2.jpg");
+}
+.parallax-bg-3 {
+	background-image: url("/img/parallax-bg-3.jpg");
+}
+.parallax-bg-4 {
+	background-image: url("/img/parallax-bg-4.jpg");
+}
+.parallax-bg-5 {
+	background-image: url("/img/parallax-bg-5.jpg");
+}
+.parallax-bg-6 {
+	background-image: url("/img/parallax-bg-6.jpg");
+}
+.parallax-caption { 
+	padding: $spacer;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: inherit;
+	background-color: rgba(0, 0, 0, 0.3);
+	p {
+		font-size: $h4-font-size;
+		text-align: center;
+	}
+	@include media-breakpoint-up(lg) {
+		h1, h2, h3 {
+					margin: 0;
+			& + p {
+				margin-top: ($spacer * 1.5);
+			}
+		}
+		p {
+			font-size: $h3-font-size;
+		}
+	}
+}
+.parallax-caption-content {
+	@include media-breakpoint-up(lg) {
+		width: 100%;
+		max-width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.parallax-description {
+	padding-top: ($spacer * 4);
+	padding-bottom: ($spacer * 4);
+	@include media-breakpoint-up(lg) {
+	}
+	p, ul {
+		font-size: $h5-font-size;
+		@include media-breakpoint-up(lg) {
+			font-size: $h4-font-size;
+		}
+	}
+}
+.parallax-description-content {
+	@include media-breakpoint-up(lg) {
+		width: 100%;
+		max-width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

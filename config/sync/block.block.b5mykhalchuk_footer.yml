@@ -1,0 +1,27 @@
+uuid: 4994ead0-3bda-4b1e-8aec-53de8d6cebd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - b5mykhalchuk
+_core:
+  default_config_hash: mQ9Fjw2xZQTcwBYFrFy1IH6c7UaC1pk73erv06woEPk
+id: b5mykhalchuk_footer
+theme: b5mykhalchuk
+region: footer
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

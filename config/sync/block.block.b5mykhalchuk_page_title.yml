@@ -1,0 +1,20 @@
+uuid: 34898091-3acb-4d27-9f40-b3fe3dbffae1
+langcode: en
+status: true
+dependencies:
+  theme:
+    - b5mykhalchuk
+_core:
+  default_config_hash: pIDBL7Hu6vS42r4MYTCDdEleOjyb-xilocF47_ppmx8
+id: b5mykhalchuk_page_title
+theme: b5mykhalchuk
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

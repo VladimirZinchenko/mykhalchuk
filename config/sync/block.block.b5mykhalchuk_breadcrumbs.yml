@@ -1,0 +1,22 @@
+uuid: d706c8bf-cd01-40dc-88e5-49f03fe3fe6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b5mykhalchuk
+_core:
+  default_config_hash: hH6i7y8fiAb872HkQcVEsN5ayeCxyHQoP7DW2hwZaug
+id: b5mykhalchuk_breadcrumbs
+theme: b5mykhalchuk
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

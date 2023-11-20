@@ -1,0 +1,20 @@
+uuid: 4883922d-ae7e-4c96-a765-b72ce5899428
+langcode: en
+status: true
+dependencies:
+  theme:
+    - b5mykhalchuk
+_core:
+  default_config_hash: x54n625Fr6p3lkMQo22IHQ9jrkewfiCMD4SFFie9EyM
+id: b5mykhalchuk_local_actions
+theme: b5mykhalchuk
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

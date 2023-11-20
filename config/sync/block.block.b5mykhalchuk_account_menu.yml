@@ -1,0 +1,27 @@
+uuid: b5ea255e-dbb3-44a1-afd6-af5790bf8120
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - b5mykhalchuk
+_core:
+  default_config_hash: b-QdSHMUSj-5bwZpkIhGIM77Q8eYcjZ_ZkD_r2LWFtU
+id: b5mykhalchuk_account_menu
+theme: b5mykhalchuk
+region: nav_additional
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

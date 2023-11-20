@@ -1,0 +1,22 @@
+uuid: c1c7d28a-32a1-4914-ad40-27fb768b49f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b5mykhalchuk
+_core:
+  default_config_hash: WYYMsSrNqMLTxR9InsrotY5qI3w95tRVpEX2dBix3cM
+id: b5mykhalchuk_content
+theme: b5mykhalchuk
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

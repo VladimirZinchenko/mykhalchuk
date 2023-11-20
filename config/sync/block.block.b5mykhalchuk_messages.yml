@@ -1,0 +1,22 @@
+uuid: b8ad5f6f-0d22-43ec-9231-33a1f35d8d12
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b5mykhalchuk
+_core:
+  default_config_hash: LsUtFMHlPVfopDM2-LcMiWAWFh9qfF8TxdrRAan8SRE
+id: b5mykhalchuk_messages
+theme: b5mykhalchuk
+region: content
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

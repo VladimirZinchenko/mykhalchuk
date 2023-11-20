@@ -1,0 +1,25 @@
+uuid: 2cf45d08-b284-4f69-9350-b8b093f2101c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b5mykhalchuk
+_core:
+  default_config_hash: ewsOheCP0dZhiRuuJx6dlxlOoVddTUwlBTyTlo9m7UE
+id: b5mykhalchuk_branding
+theme: b5mykhalchuk
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

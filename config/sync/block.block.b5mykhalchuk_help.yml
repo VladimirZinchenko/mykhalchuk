@@ -1,0 +1,22 @@
+uuid: 23b857fc-9b3b-4839-bb72-6b10166f95cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - b5mykhalchuk
+_core:
+  default_config_hash: f-aS1dZAZ3R82FiwKjADd346vK2KvBmVF3JnNq8uExk
+id: b5mykhalchuk_help
+theme: b5mykhalchuk
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }
