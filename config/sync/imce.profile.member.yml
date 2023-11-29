@@ -1,5 +1,5 @@
-uuid: debeda54-6e5b-40b6-b2f2-5eaf57fa994f
-langcode: en
+uuid: 1bdad85c-f6cf-46bd-9e60-c3c9d91a12f6
+langcode: uk
 status: true
 dependencies: {  }
 _core:
@@ -10,8 +10,8 @@ description: 'Configuration for site members'
 conf:
   usertab: false
   extensions: 'jpg png gif'
-  maxsize: 2
-  quota: 50
+  maxsize: 2.0
+  quota: 50.0
   maxwidth: 1024
   maxheight: 1024
   replace: 0

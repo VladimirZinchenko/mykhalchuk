@@ -1,0 +1,8 @@
+uuid: d6456576-3b3f-4de6-a781-4ae031ca4855
+langcode: uk
+status: true
+dependencies: {  }
+id: T43qaxwUQWS5cOCpwG2tGLGOF5UzykA0K-mCFL6oRhs
+label: 'https://mykhalchuk.ddev.site'
+context:
+  language: uk

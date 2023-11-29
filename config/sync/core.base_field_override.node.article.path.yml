@@ -1,0 +1,20 @@
+uuid: cb0d77ea-3219-4225-8da6-a8c1fb4e031d
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.article
+  module:
+    - path
+id: node.article.path
+field_name: path
+entity_type: node
+bundle: article
+label: URL-синонім
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

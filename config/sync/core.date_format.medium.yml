@@ -1,10 +1,10 @@
-uuid: eb3cead6-a7a1-4a21-abde-558a7e3a09fe
-langcode: en
+uuid: e5987fe7-169b-4b77-a178-638d8ddb908b
+langcode: uk
 status: true
 dependencies: {  }
 _core:
   default_config_hash: nzL5d024NjXIX_8TlT6uFAu973lmfkmHklJC-2i9rAE
 id: medium
-label: 'Default medium date'
+label: 'Базова середня дата'
 locked: false
 pattern: 'D, m/d/Y - H:i'

@@ -1,10 +1,10 @@
-uuid: 54b18fb2-347e-4cad-9df4-c61e2dba5d5a
-langcode: en
+uuid: ed2accf0-af64-4b67-8bec-6bb01ca69e28
+langcode: uk
 status: true
 dependencies: {  }
 _core:
   default_config_hash: og8sWXhBuHbLMw3CoiBEZjgqSyhFBFmcbUW_wLcfNbo
 id: long
-label: 'Default long date'
+label: 'Базова довга дата'
 locked: false
 pattern: 'l, F j, Y - H:i'

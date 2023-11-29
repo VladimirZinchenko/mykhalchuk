@@ -1,5 +1,5 @@
-uuid: 2ebde1c3-2f24-4547-ac85-c501f39f8d8e
-langcode: en
+uuid: a6f9d193-5fa0-4972-bf7d-a7a7d0fe67ed
+langcode: uk
 status: true
 dependencies:
   module:
@@ -8,20 +8,20 @@ dependencies:
 _core:
   default_config_hash: AcOE_1RLjX4okjWSOk7Pen1IdtPsY0Nbn0HXWG3zMqc
 id: block_content
-label: 'Content blocks'
+label: 'Блоки вмісту'
 module: views
-description: 'Find and manage content blocks.'
+description: 'Пошук блоків вмісту і керування ними.'
 tag: default
 base_table: block_content_field_data
 base_field: id
 display:
   default:
     id: default
-    display_title: Default
+    display_title: Базово
     display_plugin: default
     position: 0
     display_options:
-      title: 'Content blocks'
+      title: 'Блоки вмісту'
       fields:
         info:
           id: info
@@ -33,7 +33,7 @@ display:
           entity_type: null
           entity_field: info
           plugin_id: field
-          label: 'Block description'
+          label: 'Опис блоку'
           exclude: false
           alter:
             alter_text: false
@@ -98,7 +98,7 @@ display:
           entity_type: block_content
           entity_field: type
           plugin_id: field
-          label: 'Block type'
+          label: 'Тип блоку'
           exclude: false
           alter:
             alter_text: false
@@ -163,7 +163,7 @@ display:
           entity_type: block_content
           entity_field: changed
           plugin_id: field
-          label: Updated
+          label: Оновлено
           exclude: false
           alter:
             alter_text: false
@@ -227,7 +227,7 @@ display:
           admin_label: ''
           entity_type: block_content
           plugin_id: entity_operations
-          label: Operations
+          label: Операції
           exclude: false
           alter:
             alter_text: false
@@ -277,26 +277,26 @@ display:
           total_pages: null
           id: 0
           tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
+            next: 'Наступна ›'
+            previous: '‹ Попередня'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Елементів на сторінку'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Усе -'
             offset: false
-            offset_label: Offset
+            offset_label: Зміщення
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Застосувати
           reset_button: true
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Скинути
+          exposed_sorts_label: 'Впорядкувати за'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Зрост
+          sort_desc_label: Спад
       access:
         type: perm
         options:
@@ -314,7 +314,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'There are no content blocks available.'
+          content: 'Немає доступних блоків вмісту'
           tokenize: false
         block_content_listing_empty:
           id: block_content_listing_empty
@@ -346,7 +346,7 @@ display:
           exposed: true
           expose:
             operator_id: info_op
-            label: 'Block description'
+            label: 'Опис блоку'
             description: ''
             use_operator: false
             operator: info_op
@@ -388,7 +388,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: 'Block type'
+            label: 'Тип блоку'
             description: ''
             use_operator: false
             operator: type_op
@@ -527,7 +527,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: Page
+    display_title: Сторінка
     display_plugin: page
     position: 1
     display_options:
@@ -535,8 +535,8 @@ display:
       path: admin/content/block
       menu:
         type: tab
-        title: Blocks
-        description: 'Create and edit content blocks.'
+        title: Блоки
+        description: 'Створення та редагування блоків вмісту.'
         weight: 0
         menu_name: admin
         parent: system.admin_content

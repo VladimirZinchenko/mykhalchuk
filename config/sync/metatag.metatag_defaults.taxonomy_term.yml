@@ -1,11 +1,11 @@
-uuid: 80214266-9887-497b-80c3-7275a93e16c7
-langcode: en
+uuid: 05342c30-fe70-4a69-82b0-e35108c3aaea
+langcode: uk
 status: true
 dependencies: {  }
 _core:
   default_config_hash: 92bXZdyYJ5xqukdfmGRr_CYcwm1vfuS8b8aJ7X_G7E0
 id: taxonomy_term
-label: 'Taxonomy term'
+label: 'Термін таксономії'
 tags:
   canonical_url: '[term:url]'
   description: '[term:description]'

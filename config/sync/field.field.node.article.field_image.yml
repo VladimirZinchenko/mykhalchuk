@@ -1,5 +1,5 @@
-uuid: 151bb553-60c2-4ae3-81c8-90598174a631
-langcode: en
+uuid: 839a693d-cb5c-4b65-bc48-7b015781ab82
+langcode: uk
 status: true
 dependencies:
   config:
@@ -13,10 +13,10 @@ id: node.article.field_image
 field_name: field_image
 entity_type: node
 bundle: article
-label: Image
+label: Зображення
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

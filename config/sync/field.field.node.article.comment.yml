@@ -1,5 +1,5 @@
-uuid: 8a03df70-8054-4744-a170-58be16bf6e6e
-langcode: en
+uuid: d3418b1a-d800-4bba-88e4-f39ecbe6914d
+langcode: uk
 status: true
 dependencies:
   config:
@@ -13,10 +13,10 @@ id: node.article.comment
 field_name: comment
 entity_type: node
 bundle: article
-label: Comments
+label: Коментарі
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     status: 2

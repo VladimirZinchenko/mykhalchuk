@@ -1,5 +1,5 @@
-uuid: 7623b7b6-5a0c-4ee8-9639-0f2f770edd65
-langcode: en
+uuid: b0afaa02-9be2-40ea-b039-a9d23e0b5d05
+langcode: uk
 status: true
 dependencies:
   config:
@@ -19,7 +19,7 @@ dependencies:
 _core:
   default_config_hash: NtMgnXp0miNtJhag07NSjwdCm4zpJwhlDFs1HgyL4wI
 id: content_editor
-label: 'Content editor'
+label: 'Редактор вмісту'
 weight: 2
 is_admin: false
 permissions:

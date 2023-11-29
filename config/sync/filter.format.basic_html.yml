@@ -1,14 +1,14 @@
-uuid: a5bc58bc-94cd-4304-8e24-5cde7f50cc2d
-langcode: en
+uuid: d5e7a3db-298a-4a18-a68b-1e249d35d377
+langcode: uk
 status: true
 dependencies:
   module:
     - editor
 _core:
   default_config_hash: mufoCrfOvOmGXWBLRwQblEQbGEKQz09rnTbXnuVGC9o
-name: 'Basic HTML'
+name: 'Простий HTML'
 format: basic_html
-weight: 0
+weight: -9
 filters:
   filter_html:
     id: filter_html

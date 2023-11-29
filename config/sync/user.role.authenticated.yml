@@ -1,5 +1,5 @@
-uuid: e1ef2fb5-d7a3-41b4-82e9-831a47af2429
-langcode: en
+uuid: 4e958f7d-bd42-43ee-9b04-efc29df2404c
+langcode: uk
 status: true
 dependencies:
   config:
@@ -15,7 +15,7 @@ dependencies:
 _core:
   default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
 id: authenticated
-label: 'Authenticated user'
+label: 'Авторизований користувач'
 weight: 1
 is_admin: false
 permissions:

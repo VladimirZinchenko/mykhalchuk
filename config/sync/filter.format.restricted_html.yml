@@ -1,12 +1,12 @@
-uuid: 045f8875-65d3-4672-bf15-273a186a240b
-langcode: en
+uuid: ba970ee6-8136-4cf5-a7c4-8cf258bc5fda
+langcode: uk
 status: true
 dependencies: {  }
 _core:
   default_config_hash: oz6NyPDAB4HB6N9hgH2LwNVtCd-sXbMG1fbn5KsRIDI
-name: 'Restricted HTML'
+name: 'Обмежений HTML'
 format: restricted_html
-weight: 1
+weight: -8
 filters:
   filter_html:
     id: filter_html

@@ -1,10 +1,10 @@
-uuid: efb6b216-5e14-4c2e-8767-eb091da77dba
-langcode: en
+uuid: d9a7779f-afc1-42a8-a48a-a5156ea5b2d2
+langcode: uk
 status: true
 dependencies: {  }
 _core:
   default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
 id: main
-label: 'Main navigation'
-description: 'Site section links'
+label: 'Основна навіґація'
+description: 'Посилання розділів сайту'
 locked: true

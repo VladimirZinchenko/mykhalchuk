@@ -1,5 +1,5 @@
-uuid: e006702c-e9c9-46bc-8f90-781b28baed66
-langcode: en
+uuid: 09f4aa02-7456-4078-86ef-8297d15bca91
+langcode: uk
 status: true
 dependencies:
   config:
@@ -22,63 +22,28 @@ settings:
       - '|'
       - link
       - '|'
+      - alignment
       - bulletedList
       - numberedList
+      - indent
+      - outdent
       - '|'
       - blockQuote
       - drupalInsertImage
+      - imce_image
       - insertTable
-      - horizontalLine
       - '|'
       - heading
-      - codeBlock
+      - specialCharacters
       - '|'
       - sourceEditing
   plugins:
-    ckeditor5_codeBlock:
-      languages:
-        -
-          label: 'Plain text'
-          language: plaintext
-        -
-          label: C
-          language: c
-        -
-          label: 'C#'
-          language: cs
-        -
-          label: C++
-          language: cpp
-        -
-          label: CSS
-          language: css
-        -
-          label: Diff
-          language: diff
-        -
-          label: HTML
-          language: html
-        -
-          label: Java
-          language: java
-        -
-          label: JavaScript
-          language: javascript
-        -
-          label: PHP
-          language: php
-        -
-          label: Python
-          language: python
-        -
-          label: Ruby
-          language: ruby
-        -
-          label: TypeScript
-          language: typescript
-        -
-          label: XML
-          language: xml
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+        - right
     ckeditor5_heading:
       enabled_headings:
         - heading2

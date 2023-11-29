@@ -1,5 +1,5 @@
-uuid: 1de1800b-b560-4507-aab3-736764debb4a
-langcode: en
+uuid: b063900a-fe6e-406b-b022-52fb80718480
+langcode: uk
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: C00dyL_W_5M0nFlgUB3lWUTUs96jn51Jw1MLHVEHZD0
 id: comment_publish_action
-label: 'Publish comment'
+label: 'Опублікувати коментар'
 type: comment
 plugin: 'entity:publish_action:comment'
 configuration: {  }

@@ -1,5 +1,5 @@
-uuid: 043e851e-b5f7-4c6a-a47a-7b37cdf2af05
-langcode: en
+uuid: 448aa711-ab9c-4312-afd7-7176c0b038dd
+langcode: uk
 status: true
 dependencies:
   config:
@@ -13,10 +13,10 @@ id: node.article.body
 field_name: body
 entity_type: node
 bundle: article
-label: Body
+label: Вміст
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -1,0 +1,18 @@
+uuid: 6cc9b59f-8f0a-441f-a175-253bce71c9bf
+langcode: uk
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.created
+field_name: created
+entity_type: comment
+bundle: comment
+label: Створено
+description: 'Час, коли коментар був створений.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

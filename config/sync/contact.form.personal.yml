@@ -1,13 +1,13 @@
-uuid: c4a8cec7-f2a2-407e-b07b-6eaa7f2a6dc4
-langcode: en
+uuid: 7bee9bf7-bd6f-459b-bddd-6fcc75b7fe7c
+langcode: uk
 status: true
 dependencies: {  }
 _core:
   default_config_hash: jonvgt3CkUM2eMLTFwWfHileWWDC4YtXCuIlCahTk_I
 id: personal
-label: 'Personal contact form'
+label: 'Персональна контактна форма'
 recipients: {  }
 reply: ''
 weight: 0
-message: 'Your message has been sent.'
+message: 'Ваше повідомлення було відправлене.'
 redirect: ''

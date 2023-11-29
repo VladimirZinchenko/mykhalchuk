@@ -1,5 +1,5 @@
-uuid: e70fcc60-4e9a-40f6-817f-9b65763d7f32
-langcode: en
+uuid: ba3de47a-c0d2-4213-bd3f-3478b1aacc7d
+langcode: uk
 status: true
 dependencies:
   config:
@@ -11,16 +11,16 @@ dependencies:
 _core:
   default_config_hash: YKgw0f77GEmCu6_6Om9Mbig0mON9JdfVuMxTtd0WQaI
 id: taxonomy_term
-label: 'Taxonomy term'
+label: 'Термін таксономії'
 module: taxonomy
-description: 'Content belonging to a certain taxonomy term.'
+description: 'Матеріали, що стосуються певного терміну таксономії.'
 tag: default
 base_table: node_field_data
 base_field: nid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: Базово
     display_plugin: default
     position: 0
     display_options:
@@ -37,22 +37,22 @@ display:
             previous: ‹‹
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Елементів на сторінку'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Усе -'
             offset: false
-            offset_label: Offset
+            offset_label: Зміщення
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Застосувати
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Скинути
+          exposed_sorts_label: 'Впорядкувати за'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Зрост
+          sort_desc_label: Спад
       access:
         type: perm
         options:
@@ -102,7 +102,7 @@ display:
           exception:
             value: ''
             title_enable: false
-            title: All
+            title: Все
           title_enable: true
           title: '{{ arguments.tid }}'
           default_argument_type: fixed
@@ -261,7 +261,7 @@ display:
       tags: {  }
   feed_1:
     id: feed_1
-    display_title: Feed
+    display_title: Канал
     display_plugin: feed
     position: 2
     display_options:
@@ -299,7 +299,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: Page
+    display_title: Сторінка
     display_plugin: page
     position: 1
     display_options:
