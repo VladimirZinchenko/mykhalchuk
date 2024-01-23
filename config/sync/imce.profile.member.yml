@@ -5,8 +5,8 @@ dependencies: {  }
 _core:
   default_config_hash: pRtugufdcuY7Mt1qFFUc2exdM7_YyYmpv_GNbYN31lA
 id: member
-label: 'Member profile'
-description: 'Configuration for site members'
+label: 'Профіль учасника'
+description: 'Конфігурація для учасників сайту'
 conf:
   usertab: false
   extensions: 'jpg png gif'

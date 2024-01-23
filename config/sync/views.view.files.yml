@@ -289,7 +289,7 @@ display:
           entity_type: file
           entity_field: created
           plugin_id: field
-          label: 'Upload date'
+          label: 'Дата відвантаження'
           exclude: false
           alter:
             alter_text: false
@@ -463,7 +463,7 @@ display:
           decimal: .
           separator: ','
           format_plural: true
-          format_plural_string: !!binary MSBwbGFjZQNAY291bnQgcGxhY2Vz
+          format_plural_string: !!binary QGNvdW50INC80ZbRgdGG0LUDQGNvdW50INC80ZbRgdGG0Y8DQGNvdW50INC80ZbRgdGG0Yw=
           prefix: ''
           suffix: ''
         operations:
@@ -1049,7 +1049,7 @@ display:
           decimal: .
           separator: ','
           format_plural: false
-          format_plural_string: !!binary MQNAY291bnQ=
+          format_plural_string: !!binary QGNvdW50A0Bjb3VudANAY291bnQ=
           prefix: ''
           suffix: ''
       pager:

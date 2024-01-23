@@ -5,8 +5,8 @@ dependencies: {  }
 _core:
   default_config_hash: oKIjMkQZj_No1FKB9qTajCMwvFqGXHp9t4PU773Vfhw
 id: admin
-label: 'Admin profile'
-description: 'Configuration for site administrators'
+label: 'Адміністраторський профіль'
+description: 'Конфігурація для адміністраторів сайту'
 conf:
   usertab: true
   extensions: '*'

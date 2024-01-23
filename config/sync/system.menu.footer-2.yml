@@ -1,0 +1,8 @@
+uuid: 747ff6e6-b3c0-4cc6-9690-d79cd64ff293
+langcode: uk
+status: true
+dependencies: {  }
+id: footer-2
+label: 'Нижній колонтитул 2'
+description: 'Посилання відомостей про сайт'
+locked: false
