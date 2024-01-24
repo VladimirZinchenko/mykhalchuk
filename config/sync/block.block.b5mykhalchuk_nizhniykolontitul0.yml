@@ -1,5 +1,5 @@
-uuid: dad12d03-87d2-43bc-a736-f9bc28e08c64
-langcode: en
+uuid: 51ab2dbc-c7c4-4d1c-b378-835dd008f93a
+langcode: uk
 status: true
 dependencies:
   config:
@@ -8,17 +8,15 @@ dependencies:
     - system
   theme:
     - b5mykhalchuk
-_core:
-  default_config_hash: mQ9Fjw2xZQTcwBYFrFy1IH6c7UaC1pk73erv06woEPk
-id: b5mykhalchuk_footer
+id: b5mykhalchuk_nizhniykolontitul0
 theme: b5mykhalchuk
 region: footer
-weight: -6
+weight: 0
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
-  label: Footer
+  label: 'Нижній колонтитул 0'
   label_display: '0'
   provider: system
   level: 1

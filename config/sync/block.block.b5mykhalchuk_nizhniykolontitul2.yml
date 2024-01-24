@@ -1,0 +1,25 @@
+uuid: cbbfe0ce-c055-44ac-b474-1990ce3ebb7f
+langcode: uk
+status: true
+dependencies:
+  config:
+    - system.menu.footer-2
+  module:
+    - system
+  theme:
+    - b5mykhalchuk
+id: b5mykhalchuk_nizhniykolontitul2
+theme: b5mykhalchuk
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-2'
+settings:
+  id: 'system_menu_block:footer-2'
+  label: 'Нижній колонтитул 2'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
