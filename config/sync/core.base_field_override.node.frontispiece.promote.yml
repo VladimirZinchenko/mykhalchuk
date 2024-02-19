@@ -1,0 +1,22 @@
+uuid: 05de7fab-41f4-4812-ae4d-4cf17a348b84
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.frontispiece
+id: node.frontispiece.promote
+field_name: promote
+entity_type: node
+bundle: frontispiece
+label: 'Винесено на головну сторінку'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Увімкнено
+  off_label: Вимкнено
+field_type: boolean

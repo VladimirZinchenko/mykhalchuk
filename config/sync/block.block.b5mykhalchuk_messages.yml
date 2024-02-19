@@ -1,5 +1,5 @@
 uuid: a754949f-3aa1-4b25-aba7-58f9dd880683
-langcode: en
+langcode: uk
 status: true
 dependencies:
   module:
@@ -11,7 +11,7 @@ _core:
 id: b5mykhalchuk_messages
 theme: b5mykhalchuk
 region: content
-weight: -7
+weight: -6
 provider: null
 plugin: system_messages_block
 settings:

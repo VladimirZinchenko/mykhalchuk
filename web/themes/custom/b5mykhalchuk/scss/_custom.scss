@@ -7,9 +7,31 @@ form.contact-message-feedback-form {
 	}
 }
 ::marker {
-	color: #fd7e14;
+	color: var(--bs-secondary);
 }
-.parallax {
+
+.breadcrumb a {
+	text-decoration: none;
+}
+
+.text-bg-dark,
+.text-bg-secondary {
+	a {
+		color: $navbar-dark-color;
+		&:hover,
+		&:focus	{
+			color: $navbar-dark-hover-color;
+		}
+	}
+	.breadcrumb li::before {
+		color: $navbar-dark-color;
+	}
+	::marker {
+		color: white;
+	}
+}
+
+.parallax { //no
 	background-attachment: fixed;
 	position: relative;
 	background-position: center;
@@ -88,5 +110,52 @@ form.contact-message-feedback-form {
 		max-width: 70%;
 		margin-left: auto;
 		margin-right: auto;
+	}
+}
+
+// Footer
+footer.footer-dark {
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-top: 5rem;
+	background-image: url(img/footer-bg.webp);
+	background-position: right;
+	.region-footer {
+		@include media-breakpoint-up(md) {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+	a img {
+		filter: invert(1);
+	}
+}
+
+header::after {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url(img/header-bg.webp);
+	background-position: right;
+	content: ' ';
+	display: block;
+	padding: 2px;
+	margin-bottom: 0.5em;
+	--bs-bg-opacity: 1;
+	background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
+}
+
+// Frontispiece pages
+
+.page-node-type-frontispiece {
+	.node__content .field--name-body {
+		@include media-breakpoint-up(lg) {
+			margin: 0 auto;
+			width: 60%;
+			padding: 5rem 0;
+		}
+	}
+	h1 {
+		text-align: center;
 	}
 }

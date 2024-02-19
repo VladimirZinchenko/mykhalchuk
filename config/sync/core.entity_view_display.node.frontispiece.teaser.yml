@@ -1,0 +1,27 @@
+uuid: 6e9c89f2-c901-490a-b9b5-acda7135a6be
+langcode: uk
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.frontispiece.body
+    - node.type.frontispiece
+  module:
+    - text
+    - user
+id: node.frontispiece.teaser
+targetEntityType: node
+bundle: frontispiece
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  links: true

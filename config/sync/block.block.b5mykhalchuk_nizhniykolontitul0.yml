@@ -11,7 +11,7 @@ dependencies:
 id: b5mykhalchuk_nizhniykolontitul0
 theme: b5mykhalchuk
 region: footer
-weight: 0
+weight: -5
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

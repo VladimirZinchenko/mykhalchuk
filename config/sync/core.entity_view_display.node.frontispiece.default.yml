@@ -1,0 +1,25 @@
+uuid: f9b7d9c8-fe0a-41ec-b312-e396a2a2f46e
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.node.frontispiece.body
+    - node.type.frontispiece
+  module:
+    - text
+    - user
+id: node.frontispiece.default
+targetEntityType: node
+bundle: frontispiece
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  links: true

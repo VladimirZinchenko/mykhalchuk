@@ -1,0 +1,21 @@
+uuid: a31fbd31-e242-466a-975a-019306a54caa
+langcode: uk
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+      - footer-1
+      - footer-2
+      - main
+    parent: 'main:'
+name: Frontispiece
+type: frontispiece
+description: 'Сторінки з тлом'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

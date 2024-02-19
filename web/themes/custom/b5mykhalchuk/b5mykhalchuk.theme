@@ -4,3 +4,15 @@
  * @file
  * Mykhalchuk theme file.
  */
+/**
+*
+/* implement hook
+*/
+
+function b5mykhalchuk_theme_suggestions_html_alter(array &$suggestions, array $variables) {
+	
+	 if ($node = \Drupal::routeMatch()->getParameter('node')) {
+	     $suggestions[] = 'html__' . $node->bundle();
+	 }
+	
+}

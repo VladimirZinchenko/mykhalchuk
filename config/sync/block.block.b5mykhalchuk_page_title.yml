@@ -1,5 +1,5 @@
 uuid: 4ab9e0de-a607-4266-9560-677934522b44
-langcode: en
+langcode: uk
 status: true
 dependencies:
   theme:
@@ -9,7 +9,7 @@ _core:
 id: b5mykhalchuk_page_title
 theme: b5mykhalchuk
 region: content
-weight: -6
+weight: -5
 provider: null
 plugin: page_title_block
 settings:

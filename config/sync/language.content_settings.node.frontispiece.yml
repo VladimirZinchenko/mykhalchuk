@@ -1,0 +1,11 @@
+uuid: 02a5ff95-3765-49bd-92d1-3a2e2c4c1c16
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.frontispiece
+id: node.frontispiece
+target_entity_type_id: node
+target_bundle: frontispiece
+default_langcode: site_default
+language_alterable: false
