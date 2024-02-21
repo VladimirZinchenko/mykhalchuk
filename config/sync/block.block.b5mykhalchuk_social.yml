@@ -1,22 +1,21 @@
-uuid: a9efc886-7832-412b-926b-6d1397eb20e3
+uuid: 1852d32e-682b-4f0d-8fa0-07083ba82851
 langcode: uk
 status: true
 dependencies:
   content:
-    - 'block_content:basic:8d2f0688-b139-4d4e-88b9-5096a3b50220'
+    - 'block_content:basic:9b03731a-ee4f-4ad3-afa2-e047bc94b25a'
   module:
     - block_content
-    - block_id
   theme:
     - b5mykhalchuk
 id: b5mykhalchuk_social
 theme: b5mykhalchuk
 region: footer_top
-weight: -6
+weight: 0
 provider: null
-plugin: 'block_content:8d2f0688-b139-4d4e-88b9-5096a3b50220'
+plugin: 'block_content:9b03731a-ee4f-4ad3-afa2-e047bc94b25a'
 settings:
-  id: 'block_content:8d2f0688-b139-4d4e-88b9-5096a3b50220'
+  id: 'block_content:9b03731a-ee4f-4ad3-afa2-e047bc94b25a'
   label: Social
   label_display: '0'
   provider: block_content
