@@ -1,21 +1,25 @@
-uuid: 1852d32e-682b-4f0d-8fa0-07083ba82851
+uuid: 09ae2067-ed08-4adf-a98d-e99f8fcd479c
 langcode: uk
 status: true
 dependencies:
   content:
-    - 'block_content:basic:9b03731a-ee4f-4ad3-afa2-e047bc94b25a'
+    - 'block_content:basic:08f3b5b9-8e09-4bb0-8111-a3c825403775'
   module:
     - block_content
+    - block_id
   theme:
     - b5mykhalchuk
+third_party_settings:
+  block_id:
+    id: 1852d32e-682b-4f0d-8fa0-07083ba82851
 id: b5mykhalchuk_social
 theme: b5mykhalchuk
 region: footer_top
 weight: 0
 provider: null
-plugin: 'block_content:9b03731a-ee4f-4ad3-afa2-e047bc94b25a'
+plugin: 'block_content:08f3b5b9-8e09-4bb0-8111-a3c825403775'
 settings:
-  id: 'block_content:9b03731a-ee4f-4ad3-afa2-e047bc94b25a'
+  id: 'block_content:08f3b5b9-8e09-4bb0-8111-a3c825403775'
   label: Social
   label_display: '0'
   provider: block_content
