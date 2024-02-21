@@ -1,0 +1,12 @@
+uuid: e550f0d1-232c-48e2-a6d7-2b65d9fc7b9a
+langcode: uk
+status: true
+dependencies:
+  content:
+    - 'file:file:779f8701-41b7-4770-affb-695745c5c7a6'
+id: simple_text
+label: 'Simple text'
+icon_uuid: 779f8701-41b7-4770-affb-695745c5c7a6
+icon_default: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkBAMAAACCzIhnAAAAGFBMVEUuzJEAAAAuzJEuzJEuzJEuzJEuzJEuzJHPVWXnAAAAB3RSTlPtAEIS9NwFABocIgAAAGtJREFUWMPt2LENgDAQQ9FrIupbIRMQCWagZQWYIEUk1mcCF6YAIX231muusi72MFNiu8yMmFzSIRAIBAKBQH5JHiylaifSzkukihx5ikZdbLRczG3ZW86igUAgEAgEAvme+LNHPe5Ky1U0N/4zM8oyTK/2AAAAAElFTkSuQmCC'
+description: 'Параграф з текстом у одну чи дві колонки'
+behavior_plugins: {  }

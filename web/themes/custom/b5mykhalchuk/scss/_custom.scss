@@ -1,19 +1,44 @@
 // Custom variables (overrides).
 
+// Branding
+.navbar-brand .site-title {
+	@include media-breakpoint-up(sm) {
+		font-size: 1.5rem;
+	}
+}
+
+header::after {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url(img/header-bg.webp);
+	background-position: right;
+	content: ' ';
+	display: block;
+	padding: 2px;
+	margin-bottom: 0.5em;
+	--bs-bg-opacity: 1;
+	background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
+}
+
+// Contact forms
 form.contact-message-feedback-form {
 	@include media-breakpoint-up(md) {
 		margin: auto;
 		width: 50%;
 	}
 }
+
+// Type
 ::marker {
 	color: var(--bs-secondary);
 }
 
+// Breadcrumb
 .breadcrumb a {
 	text-decoration: none;
 }
 
+// Colors on dark theme
 .text-bg-dark,
 .text-bg-secondary {
 	a {
@@ -115,11 +140,13 @@ form.contact-message-feedback-form {
 
 // Footer
 footer.footer-dark {
-	background-repeat: no-repeat;
-	background-size: contain;
-	padding-top: 5rem;
-	background-image: url(img/footer-bg.webp);
-	background-position: right;
+	@include media-breakpoint-up(sm) {
+		background-repeat: no-repeat;
+		background-size: contain;
+		padding-top: 5rem;
+		background-image: url(img/footer-bg.webp);
+		background-position: 80%;
+	}
 	.region-footer {
 		@include media-breakpoint-up(md) {
 			display: flex;
@@ -132,21 +159,7 @@ footer.footer-dark {
 	}
 }
 
-header::after {
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-image: url(img/header-bg.webp);
-	background-position: right;
-	content: ' ';
-	display: block;
-	padding: 2px;
-	margin-bottom: 0.5em;
-	--bs-bg-opacity: 1;
-	background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
-}
-
-// Frontispiece pages
-
+// Frontispiece
 .page-node-type-frontispiece {
 	.node__content .field--name-body {
 		@include media-breakpoint-up(lg) {
@@ -157,5 +170,19 @@ header::after {
 	}
 	h1 {
 		text-align: center;
+	}
+}
+
+// Paragraph Simple text
+.twocolumn {
+	@include media-breakpoint-up(md) {
+		columns: 2 auto;
+		column-gap: 2rem;
+	}
+	h3 {
+		column-span: all;
+	}
+	.field--name-field-text * {
+		display: inline-block;
 	}
 }

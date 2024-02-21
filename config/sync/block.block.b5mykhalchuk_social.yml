@@ -11,8 +11,8 @@ dependencies:
     - b5mykhalchuk
 id: b5mykhalchuk_social
 theme: b5mykhalchuk
-region: footer
-weight: 0
+region: footer_top
+weight: -6
 provider: null
 plugin: 'block_content:8d2f0688-b139-4d4e-88b9-5096a3b50220'
 settings:

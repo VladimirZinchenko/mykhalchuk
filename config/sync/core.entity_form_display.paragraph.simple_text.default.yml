@@ -1,0 +1,41 @@
+uuid: 7ef0b3a4-4827-4cc0-81b6-83935ac906c6
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.simple_text.field_column
+    - field.field.paragraph.simple_text.field_subtitle
+    - field.field.paragraph.simple_text.field_text
+    - paragraphs.paragraphs_type.simple_text
+  module:
+    - text
+id: paragraph.simple_text.default
+targetEntityType: paragraph
+bundle: simple_text
+mode: default
+content:
+  field_column:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_subtitle:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

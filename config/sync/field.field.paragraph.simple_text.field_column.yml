@@ -1,0 +1,23 @@
+uuid: 1a409253-ced6-4c28-8089-6bef2ce6e596
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column
+    - paragraphs.paragraphs_type.simple_text
+  module:
+    - options
+id: paragraph.simple_text.field_column
+field_name: field_column
+entity_type: paragraph
+bundle: simple_text
+label: Column
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: twocolumn
+default_value_callback: ''
+settings: {  }
+field_type: list_string
