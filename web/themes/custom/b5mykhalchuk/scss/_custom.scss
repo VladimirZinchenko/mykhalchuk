@@ -179,10 +179,38 @@ footer.footer-dark {
 		columns: 2 auto;
 		column-gap: 2rem;
 	}
-	h3 {
+	h3.subtitle {
 		column-span: all;
+		color: var(--bs-secondary);
+		line-height: 0.95;
+		@include media-breakpoint-up(md) {
+			width: 33%;
+		}
 	}
 	.field--name-field-text * {
 		display: inline-block;
+	}
+}
+
+.node__content .field--name-body {
+	h2, h3 {
+		color: var(--bs-secondary);
+	}
+	h2 {
+		line-height: 1;
+		@include media-breakpoint-up(md) {
+			width: 50%;
+		}
+	}
+	h3 {
+		line-height: 0.95;
+		@include media-breakpoint-up(md) {
+			width: 33%;
+		}
+	}
+	.text-bg-secondary & {
+		h2, h3 {
+			color: $navbar-dark-color;
+		}
 	}
 }

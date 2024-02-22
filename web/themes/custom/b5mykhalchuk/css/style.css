@@ -11344,10 +11344,39 @@ footer.footer-dark a img {
     column-gap: 2rem;
   }
 }
-.twocolumn h3, .twocolumn .h3 {
+.twocolumn h3.subtitle, .twocolumn .subtitle.h3 {
   column-span: all;
+  color: var(--bs-secondary);
+  line-height: 0.95;
+}
+@media (min-width: 768px) {
+  .twocolumn h3.subtitle, .twocolumn .subtitle.h3 {
+    width: 33%;
+  }
 }
 .twocolumn .field--name-field-text * {
   display: inline-block;
+}
+.node__content .field--name-body h2, .node__content .field--name-body .h2, .node__content .field--name-body h3, .node__content .field--name-body .h3 {
+  color: var(--bs-secondary);
+}
+.node__content .field--name-body h2, .node__content .field--name-body .h2 {
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  .node__content .field--name-body h2, .node__content .field--name-body .h2 {
+    width: 50%;
+  }
+}
+.node__content .field--name-body h3, .node__content .field--name-body .h3 {
+  line-height: 0.95;
+}
+@media (min-width: 768px) {
+  .node__content .field--name-body h3, .node__content .field--name-body .h3 {
+    width: 33%;
+  }
+}
+.text-bg-secondary .node__content .field--name-body h2, .text-bg-secondary .node__content .field--name-body .h2, .text-bg-secondary .node__content .field--name-body h3, .text-bg-secondary .node__content .field--name-body .h3 {
+  color: rgba(255, 255, 255, 0.55);
 }
 /*# sourceMappingURL=style.css.map */
