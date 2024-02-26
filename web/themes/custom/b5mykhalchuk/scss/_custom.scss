@@ -160,11 +160,12 @@ footer.footer-dark {
 }
 
 // Frontispiece
-.page-node-type-frontispiece {
+.page-node-type-frontispiece,
+.page-node-type-page {
 	.node__content .field--name-body {
 		@include media-breakpoint-up(lg) {
 			margin: 0 auto;
-			width: 60%;
+			width: 60vw;
 			padding: 5rem 0;
 		}
 	}
@@ -184,10 +185,10 @@ footer.footer-dark {
 		color: var(--bs-secondary);
 		line-height: 0.95;
 		@include media-breakpoint-up(md) {
-			width: 33%;
+			width: 40vw;
 		}
 	}
-	.field--name-field-text * {
+	.field--name-field-text p {
 		display: inline-block;
 	}
 }
@@ -199,13 +200,13 @@ footer.footer-dark {
 	h2 {
 		line-height: 1;
 		@include media-breakpoint-up(md) {
-			width: 50%;
+			width: 40vw;
 		}
 	}
 	h3 {
 		line-height: 0.95;
 		@include media-breakpoint-up(md) {
-			width: 33%;
+			width: 30vw;
 		}
 	}
 	.text-bg-secondary & {
