@@ -1,22 +1,22 @@
-uuid: 51ab2dbc-c7c4-4d1c-b378-835dd008f93a
+uuid: d9cae086-9721-42c0-abc4-38387993d67a
 langcode: uk
 status: true
 dependencies:
   config:
-    - system.menu.footer
+    - system.menu.footer-2
   module:
     - system
   theme:
     - b5mykhalchuk
-id: b5mykhalchuk_nizhniykolontitul0
+id: b5mykhalchuk_footer2
 theme: b5mykhalchuk
 region: footer
 weight: -5
 provider: null
-plugin: 'system_menu_block:footer'
+plugin: 'system_menu_block:footer-2'
 settings:
-  id: 'system_menu_block:footer'
-  label: 'Нижній колонтитул 0'
+  id: 'system_menu_block:footer-2'
+  label: 'Footer 2'
   label_display: '0'
   provider: system
   level: 1

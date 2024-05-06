@@ -3,8 +3,14 @@ _core:
 langcode: uk
 definitions:
   contact__site_page:
-    enabled: false
+    weight: -47
     menu_name: footer
     parent: ''
     expanded: false
-    weight: 0
+    enabled: false
+  standard__front_page:
+    weight: -50
+    menu_name: main
+    parent: ''
+    enabled: true
+    expanded: false

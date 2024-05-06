@@ -3,6 +3,6 @@ langcode: uk
 status: true
 dependencies: {  }
 id: footer-1
-label: 'Нижній колонтитул 1'
+label: 'Footer 1'
 description: 'Посилання відомостей про сайт'
 locked: false

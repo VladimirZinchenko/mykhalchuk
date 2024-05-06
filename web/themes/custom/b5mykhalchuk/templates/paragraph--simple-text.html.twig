@@ -50,7 +50,7 @@
   <div{{ attributes.addClass(classes) }}>
   <div class="{{ content.field_column.0 }}">
     {% block content %}
-	<h3 class="subtitle">{{ content.field_subtitle.0 }}</h3>
+	<h2 class="subtitle display-6 mb-3">{{ content.field_subtitle.0 }}</h2>
       {{ content|without('field_subtitle', 'field_column') }}
     {% endblock %}
 	</div>

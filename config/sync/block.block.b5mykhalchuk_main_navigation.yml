@@ -1,6 +1,6 @@
 uuid: 665c145e-104d-4b7a-b2c1-787196d82877
 langcode: uk
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main

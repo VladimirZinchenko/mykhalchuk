@@ -1,18 +1,16 @@
-uuid: 839a693d-cb5c-4b65-bc48-7b015781ab82
+uuid: cfa0f3ae-7faf-4d19-9d4a-fc6ec02be4eb
 langcode: uk
 status: true
 dependencies:
   config:
     - field.storage.node.field_image
-    - node.type.article
+    - node.type.frontispiece
   module:
     - image
-_core:
-  default_config_hash: PmVL51L3A9QGbPLoeLHw5epAPszeZRasCeC3imeeDRQ
-id: node.article.field_image
+id: node.frontispiece.field_image
 field_name: field_image
 entity_type: node
-bundle: article
+bundle: frontispiece
 label: Зображення
 description: ''
 required: false
@@ -22,13 +20,13 @@ default_value_callback: ''
 settings:
   handler: 'default:file'
   handler_settings: {  }
-  file_directory: field/image/article
+  file_directory: field/image/frontispiece
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''
   alt_field: true
-  alt_field_required: true
+  alt_field_required: false
   title_field: false
   title_field_required: false
   default_image:

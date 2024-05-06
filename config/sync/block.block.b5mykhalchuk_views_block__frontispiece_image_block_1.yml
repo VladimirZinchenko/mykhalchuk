@@ -1,0 +1,34 @@
+uuid: ac01f87b-cfde-45c5-97f2-1dd6f11f1973
+langcode: uk
+status: true
+dependencies:
+  config:
+    - views.view.frontispiece_image
+  module:
+    - block_id
+    - node
+    - views
+  theme:
+    - b5mykhalchuk
+id: b5mykhalchuk_views_block__frontispiece_image_block_1
+theme: b5mykhalchuk
+region: header
+weight: 0
+provider: null
+plugin: 'views_block:frontispiece_image-block_1'
+settings:
+  id: 'views_block:frontispiece_image-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      frontispiece: frontispiece
