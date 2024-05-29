@@ -295,7 +295,7 @@ display: block;
 
 .mm-wrapper_opening .responsive-menu-toggle-icon:before,
 .mm-wrapper_opening .responsive-menu-toggle-icon:after {
-	top: 14px;
+	top: 24px;
 }
 
 .mm-wrapper_opening .responsive-menu-toggle-icon span.icon {
@@ -505,7 +505,7 @@ footer.footer-dark {
 
 // Paragraph Simple text
 .twocolumn {
-	@include media-breakpoint-up(md) {
+	@include media-breakpoint-up(lg) {
 		columns: 2 auto;
 		column-gap: 4rem;
 	}
@@ -513,7 +513,7 @@ footer.footer-dark {
 		column-span: all;
 		color: var(--bs-secondary);
 		line-height: 0.95;
-		@include media-breakpoint-up(md) {
+		@include media-breakpoint-up(lg) {
 			width: 40vw;
 		}
 	}
@@ -524,14 +524,14 @@ footer.footer-dark {
 	h2 {
 		line-height: 1;
 		color: var(--bs-secondary);
-		@include media-breakpoint-up(md) {
+		@include media-breakpoint-up(lg) {
 			width: 40vw;
 		}
 	}
 	h3, h4 {
 		line-height: 0.95;
 		color: $dark;
-		@include media-breakpoint-up(md) {
+		@include media-breakpoint-up(lg) {
 			width: 30vw;
 		}
 	}

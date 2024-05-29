@@ -3,7 +3,6 @@ langcode: uk
 status: true
 dependencies:
   module:
-    - block_id
     - node
   theme:
     - b5mykhalchuk

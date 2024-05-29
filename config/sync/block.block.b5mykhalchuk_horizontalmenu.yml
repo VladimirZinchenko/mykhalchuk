@@ -9,7 +9,7 @@ dependencies:
 id: b5mykhalchuk_horizontalmenu
 theme: b5mykhalchuk
 region: nav_main
-weight: 0
+weight: -8
 provider: null
 plugin: responsive_menu_horizontal_menu
 settings:
