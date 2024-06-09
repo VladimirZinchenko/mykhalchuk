@@ -8,4 +8,5 @@ id: front
 label: 'Головна сторінка'
 tags:
   canonical_url: '[site:url]'
+  description: 'Сучасний український живописець, графік, мистецтвознавець, колекціонер та педагог Вадим Михальчук'
   shortlink: '[site:url]'
