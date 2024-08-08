@@ -1,6 +1,5 @@
 _core:
   default_config_hash: 7oNO5Ci1XbGo6pXiGAo8fY7GXlxy41RhL7lGyt2OXYw
-langcode: uk
 horizontal_menu: main
 horizontal_depth: 9
 off_canvas_menus: 'main,account'

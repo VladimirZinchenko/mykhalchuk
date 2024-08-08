@@ -11447,6 +11447,9 @@ code {
 header {
   margin-bottom: 0.5rem;
 }
+.breadcrumb a {
+  text-decoration: none;
+}
 @media (min-width: 576px) {
   .navbar-brand .site-title {
     font-size: 1.5rem;
@@ -11756,9 +11759,6 @@ ul.menu.mm-listview {
 b, strong {
   font-weight: 500;
 }
-.breadcrumb a {
-  text-decoration: none;
-}
 .text-bg-dark a, .text-bg-secondary a {
   color: rgba(255, 255, 255, 0.55);
 }
@@ -11772,54 +11772,29 @@ b, strong {
   color: white;
 }
 .parallax {
-  background-attachment: fixed;
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
+  color: #FFFFFF;
+  height: 400px;
 }
 @media (min-width: 992px) {
   .parallax {
     height: 600px;
   }
 }
-.parallax-bg-1 {
-  background-image: url("/themes/custom/b5mykhalchuk//img/parallax-bg-1.jpg");
-}
-.parallax-bg-2 {
-  background-image: url("/themes/custom/b5mykhalchuk//img/parallax-bg-2.jpg");
-}
-.parallax-bg-3 {
-  background-image: url("/themes/custom/b5mykhalchuk//img/parallax-bg-3.jpg");
-}
-.parallax-bg-4 {
-  background-image: url("/themes/custom/b5mykhalchuk//img/parallax-bg-4.jpg");
-}
-.parallax-bg-5 {
-  background-image: url("/themes/custom/b5mykhalchuk//img/parallax-bg-5.jpg");
-}
-.parallax-bg-6 {
-  background-image: url("/themes/custom/b5mykhalchuk//img/parallax-bg-6.jpg");
-}
 .parallax-caption {
-  padding: 1rem;
-  color: #ffffff;
   display: flex;
-  justify-content: center;
   align-items: center;
+  padding: 1rem;
   height: inherit;
   background-color: rgba(0, 0, 0, 0.3);
 }
 .parallax-caption p {
   font-size: 1.5rem;
-  text-align: center;
 }
 @media (min-width: 992px) {
-  .parallax-caption h1, .parallax-caption .h1, .parallax-caption h2, .parallax-caption .h2, .parallax-caption h3, .parallax-caption .h3 {
+  .parallax-caption h2, .parallax-caption .h2, .parallax-caption h3, .parallax-caption .h3 {
     margin: 0;
   }
-  .parallax-caption h1 + p, .parallax-caption .h1 + p, .parallax-caption h2 + p, .parallax-caption .h2 + p, .parallax-caption h3 + p, .parallax-caption .h3 + p {
+  .parallax-caption h2 + p, .parallax-caption .h2 + p, .parallax-caption h3 + p, .parallax-caption .h3 + p {
     margin-top: 1.5rem;
   }
   .parallax-caption p {
@@ -11827,7 +11802,7 @@ b, strong {
   }
 }
 @media (min-width: 992px) {
-  .parallax-caption-content {
+  .parallax-caption-content, .parallax-description-content {
     width: 100%;
     max-width: 70%;
     margin-left: auto;
@@ -11835,8 +11810,7 @@ b, strong {
   }
 }
 .parallax-description {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding: 3rem 0.75rem;
 }
 .parallax-description p, .parallax-description ul {
   font-size: 1.25rem;
@@ -11844,14 +11818,6 @@ b, strong {
 @media (min-width: 992px) {
   .parallax-description p, .parallax-description ul {
     font-size: 1.5rem;
-  }
-}
-@media (min-width: 992px) {
-  .parallax-description-content {
-    width: 100%;
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media (min-width: 576px) {

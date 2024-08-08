@@ -1,22 +1,22 @@
-uuid: ac01f87b-cfde-45c5-97f2-1dd6f11f1973
+uuid: d37cb71f-f23e-4134-a8b5-ce68b061a83c
 langcode: uk
 status: true
 dependencies:
   config:
-    - views.view.frontispiece_image
+    - views.view.frontispiece_bg_image
   module:
     - node
     - views
   theme:
     - b5mykhalchuk
-id: b5mykhalchuk_views_block__frontispiece_image_block_1
+id: b5mykhalchuk_views_block__frontispiece_bg_image_block
 theme: b5mykhalchuk
 region: header
-weight: -9
+weight: 0
 provider: null
-plugin: 'views_block:frontispiece_image-block_1'
+plugin: 'views_block:frontispiece_bg_image-block'
 settings:
-  id: 'views_block:frontispiece_image-block_1'
+  id: 'views_block:frontispiece_bg_image-block'
   label: ''
   label_display: '0'
   provider: views

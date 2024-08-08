@@ -1,4 +1,4 @@
-uuid: 66c3a6dc-e9a4-426d-bf00-41e50d4cb181
+uuid: fd5b93e4-81a3-42e5-896d-e41fd73087d3
 langcode: uk
 status: true
 dependencies:
@@ -6,12 +6,12 @@ dependencies:
     - field.storage.node.field_image
     - node.type.frontispiece
   module:
-    - image
+    - bg_image_formatter
     - node
     - semanticviews
     - user
-id: frontispiece_image
-label: 'Frontispiece image'
+id: frontispiece_bg_image
+label: 'Frontispiece bg image'
 module: views
 description: ''
 tag: ''
@@ -24,7 +24,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Frontispiece image'
+      title: 'Frontispiece bg image'
       fields:
         field_image:
           id: field_image
@@ -63,8 +63,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: div
-          element_class: img-cover
+          element_type: ''
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -76,12 +76,23 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: bg_image_formatter
           settings:
-            image_link: ''
             image_style: ''
-            image_loading:
-              attribute: eager
+            css_settings:
+              bg_image_selector: .parallax
+              bg_image_z_index: auto
+              bg_image_color: '#FFFFFF'
+              bg_image_x: center
+              bg_image_y: center
+              bg_image_attachment: fixed
+              bg_image_repeat: no-repeat
+              bg_image_background_size: cover
+              bg_image_media_query: all
+              bg_image_important: 0
+              bg_image_background_size_ie8: 0
+              bg_image_path_format: relative
+              bg_image_gradient: ''
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -103,7 +114,7 @@ display:
           entity_field: title
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -131,13 +142,13 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h1
-          element_class: display-1
+          element_type: ''
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: div
-          element_wrapper_class: img-caption
+          element_wrapper_type: ''
+          element_wrapper_class: ''
           element_default_classes: false
           empty: ''
           hide_empty: false
@@ -157,6 +168,55 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: custom
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "    <div class=\"parallax-caption\">\r\n        <div class=\"container\">\r\n            <div class=\"parallax-caption-content\">\r\n<h1 class=\"display-1\">{{ title }}</h1>\r\n            </div>\r\n        </div>\r\n    </div>"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
       pager:
         type: some
         options:
@@ -310,7 +370,7 @@ display:
             attributes: ''
           row:
             element_type: div
-            attributes: class|position-relative
+            attributes: class|parallax
             last_every_nth: '0'
             first_class: first
             last_class: last
@@ -344,8 +404,8 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_image'
-  block_1:
-    id: block_1
+  block:
+    id: block
     display_title: Block
     display_plugin: block
     position: 1

@@ -1,17 +1,23 @@
 // Custom variables (overrides).
 
-
+// Breadcrumb margin
 header {
 	margin-bottom: 0.5rem;
 }
 
-// Branding
+// Breadcrumb
+.breadcrumb a {
+	text-decoration: none;
+}
+
+// Branding Site title size
 .navbar-brand .site-title {
 	@include media-breakpoint-up(sm) {
 		font-size: 1.5rem;
 	}
 }
 
+// Image cover
 .img-cover img, img.img-cover {
 	object-fit: cover;
 	object-position: center center;
@@ -38,6 +44,7 @@ header {
   height: 100%;
 }
 
+// Navbar bottom image
 .navbar-bottom {
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -56,8 +63,7 @@ header {
 	opacity: 0.5;
 }
 
-//Responsive-menu
-
+//Responsive-menu from module css
 .search-block-form {
 	padding-bottom: 2rem;
 }
@@ -359,11 +365,6 @@ b, strong {
     font-weight: 500;
 }
 
-// Breadcrumb
-.breadcrumb a {
-	text-decoration: none;
-}
-
 // Colors on dark theme
 .text-bg-dark,
 .text-bg-secondary {
@@ -382,49 +383,25 @@ b, strong {
 	}
 }
 
-.parallax { //no
-	background-attachment: fixed;
-	position: relative;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 500px;
+// Parallax
+.parallax {
+	color: #FFFFFF;
+	height: 400px;
 	@include media-breakpoint-up(lg) {
 		height: 600px;
 	}
 }
-.parallax-bg-1 {
-	background-image: url("/img/parallax-bg-1.jpg");
-}
-.parallax-bg-2 {
-	background-image: url("/img/parallax-bg-2.jpg");
-}
-.parallax-bg-3 {
-	background-image: url("/img/parallax-bg-3.jpg");
-}
-.parallax-bg-4 {
-	background-image: url("/img/parallax-bg-4.jpg");
-}
-.parallax-bg-5 {
-	background-image: url("/img/parallax-bg-5.jpg");
-}
-.parallax-bg-6 {
-	background-image: url("/img/parallax-bg-6.jpg");
-}
-.parallax-caption { 
-	padding: $spacer;
-	color: #ffffff;
+.parallax-caption {
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	padding: $spacer;
 	height: inherit;
 	background-color: rgba(0, 0, 0, 0.3);
 	p {
 		font-size: $h4-font-size;
-		text-align: center;
 	}
 	@include media-breakpoint-up(lg) {
-		h1, h2, h3 {
+		h2, h3 {
 					margin: 0;
 			& + p {
 				margin-top: ($spacer * 1.5);
@@ -435,7 +412,7 @@ b, strong {
 		}
 	}
 }
-.parallax-caption-content {
+.parallax-caption-content, .parallax-description-content {
 	@include media-breakpoint-up(lg) {
 		width: 100%;
 		max-width: 70%;
@@ -444,23 +421,12 @@ b, strong {
 	}
 }
 .parallax-description {
-	padding-top: ($spacer * 4);
-	padding-bottom: ($spacer * 4);
-	@include media-breakpoint-up(lg) {
-	}
+	padding: ($spacer * 3) 0.75rem;
 	p, ul {
 		font-size: $h5-font-size;
 		@include media-breakpoint-up(lg) {
 			font-size: $h4-font-size;
 		}
-	}
-}
-.parallax-description-content {
-	@include media-breakpoint-up(lg) {
-		width: 100%;
-		max-width: 70%;
-		margin-left: auto;
-		margin-right: auto;
 	}
 }
 

@@ -1,0 +1,45 @@
+uuid: 7400a96c-7f51-4c17-a3d8-41d5fb87591f
+langcode: uk
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.media_item.body
+    - field.field.node.media_item.field_media
+    - image.style.media_library
+    - node.type.media_item
+  module:
+    - media
+    - text
+    - user
+id: node.media_item.teaser
+targetEntityType: node
+bundle: media_item
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_media:
+    type: media_thumbnail
+    label: above
+    settings:
+      image_link: content
+      image_style: media_library
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
