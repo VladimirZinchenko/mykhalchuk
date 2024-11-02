@@ -242,11 +242,11 @@ display: block;
 
 .no-js .off-canvas-wrapper {
 	display: none;
-}
+}*/
 
 .responsive-menu-toggle {
 	display: inline-block;
-}*/
+}
 
 .responsive-menu-toggle-icon {
 	box-sizing: border-box;
@@ -256,9 +256,9 @@ display: block;
 	z-index: 4;
 	margin-top: 0;
 	position: relative;
-	@include media-breakpoint-up(lg) {
+/*	@include media-breakpoint-up(lg) {
 		display: none;
-	}
+	} */
 }
 
 /*.no-js .responsive-menu-toggle-icon {

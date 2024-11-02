@@ -11659,11 +11659,10 @@ display: block;
 
 .no-js .off-canvas-wrapper {
 	display: none;
-}
-
-.responsive-menu-toggle {
-	display: inline-block;
 }*/
+.responsive-menu-toggle {
+  display: inline-block;
+}
 .responsive-menu-toggle-icon {
   box-sizing: border-box;
   display: block;
@@ -11672,11 +11671,9 @@ display: block;
   z-index: 4;
   margin-top: 0;
   position: relative;
-}
-@media (min-width: 992px) {
-  .responsive-menu-toggle-icon {
-    display: none;
-  }
+  /*	@include media-breakpoint-up(lg) {
+		display: none;
+	} */
 }
 /*.no-js .responsive-menu-toggle-icon {
 	display: none;
