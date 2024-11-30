@@ -17,7 +17,7 @@ horizontal_superfish_speed_out: 100
 horizontal_superfish_hoverintent: true
 drag: false
 breakpoint_css_filepath: 'public://css'
-use_breakpoint: true
+use_breakpoint: false
 allow_admin: false
 wrapper_admin: true
 wrapper_theme: false

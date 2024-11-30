@@ -12,7 +12,7 @@ dependencies:
 id: b5mykhalchuk_views_block__frontispiece_bg_image_block
 theme: b5mykhalchuk
 region: header
-weight: 0
+weight: -9
 provider: null
 plugin: 'views_block:frontispiece_bg_image-block'
 settings:

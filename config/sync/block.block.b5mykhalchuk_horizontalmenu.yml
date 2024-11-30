@@ -1,6 +1,6 @@
 uuid: d2fe57ec-f86c-4aab-ae74-3b562612d724
 langcode: uk
-status: true
+status: false
 dependencies:
   module:
     - responsive_menu
@@ -9,7 +9,7 @@ dependencies:
 id: b5mykhalchuk_horizontalmenu
 theme: b5mykhalchuk
 region: nav_main
-weight: -8
+weight: -9
 provider: null
 plugin: responsive_menu_horizontal_menu
 settings:
