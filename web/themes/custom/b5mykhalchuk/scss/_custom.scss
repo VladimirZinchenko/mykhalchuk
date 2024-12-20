@@ -349,6 +349,11 @@ ul.menu.mm-listview {
 	margin-left: 0;
 }
 
+// Menu panel color
+.mm-menu_theme-dark {
+    --mm-color-background: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity, 1)) !important;
+}
+
 // Contact forms
 form.contact-message-feedback-form {
 	@include media-breakpoint-up(md) {

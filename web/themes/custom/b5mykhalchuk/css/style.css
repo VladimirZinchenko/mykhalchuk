@@ -11744,6 +11744,9 @@ ul.menu.mm-listview {
   padding-left: 0;
   margin-left: 0;
 }
+.mm-menu_theme-dark {
+  --mm-color-background: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity, 1)) !important;
+}
 @media (min-width: 768px) {
   form.contact-message-feedback-form {
     margin: auto;
