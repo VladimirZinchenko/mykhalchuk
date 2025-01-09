@@ -1,0 +1,9 @@
+uuid: 73026ddd-d736-48cd-b655-72dacbaf4f0b
+langcode: uk
+status: true
+dependencies: {  }
+name: Gallery
+vid: gallery
+description: 'Рік написання роботи'
+weight: 0
+new_revision: false

@@ -1,16 +1,16 @@
-uuid: 945f7d58-8b0f-4edf-adff-4f9f1bcd8576
+uuid: 0f6f2f79-f37a-403a-843e-e22679a07bc3
 langcode: uk
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.media_item
+    - node.type.media_image_display
   module:
     - text
-id: node.media_item.body
+id: node.media_image_display.body
 field_name: body
 entity_type: node
-bundle: media_item
+bundle: media_image_display
 label: Body
 description: ''
 required: false

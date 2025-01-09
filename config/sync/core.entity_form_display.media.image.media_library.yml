@@ -4,7 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
+    - field.field.media.image.feeds_item
+    - field.field.media.image.field_code
+    - field.field.media.image.field_gallery
+    - field.field.media.image.field_height
     - field.field.media.image.field_media_image
+    - field.field.media.image.field_technic
+    - field.field.media.image.field_weight
     - image.style.thumbnail
     - media.type.image
   module:
@@ -18,7 +24,7 @@ mode: media_library
 content:
   field_media_image:
     type: image_image
-    weight: 1
+    weight: 0
     region: content
     settings:
       progress_indicator: throbber
@@ -26,13 +32,19 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 2
+    weight: 1
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
 hidden:
   created: true
+  feeds_item: true
+  field_code: true
+  field_gallery: true
+  field_height: true
+  field_technic: true
+  field_weight: true
   name: true
   path: true
   status: true

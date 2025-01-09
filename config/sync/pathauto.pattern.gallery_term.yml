@@ -1,0 +1,22 @@
+uuid: 46c0f641-7a5f-4065-b7ab-8b8526316a1b
+langcode: uk
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: gallery_term
+label: 'Gallery term'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:vocabulary:name]/[term:name]'
+selection_criteria:
+  e13fc8ad-e4ed-4893-9948-dbe74f7039e2:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: e13fc8ad-e4ed-4893-9948-dbe74f7039e2
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      gallery: gallery
+selection_logic: and
+weight: -5
+relationships: {  }

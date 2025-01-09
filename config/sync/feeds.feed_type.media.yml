@@ -1,0 +1,185 @@
+uuid: d5067df8-d96c-4ad5-b4a0-74dd223306ed
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_code
+    - field.field.media.image.field_gallery
+    - field.field.media.image.field_height
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_technic
+    - field.field.media.image.field_weight
+    - media.type.image
+  module:
+    - feeds_tamper
+    - media
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      1150fb17-6ebd-469b-b33c-80475d012b0c:
+        text: 'https://mykhalchuk.ddev.site/sites/default/files/upload/[media_url]'
+        uuid: 1150fb17-6ebd-469b-b33c-80475d012b0c
+        plugin: rewrite
+        source: media_url
+        weight: 0
+        label: Переписування
+      9fef7c22-37b4-4b12-826f-475452a85251:
+        text: 'Вадим Михальчук. [media_name]'
+        uuid: 9fef7c22-37b4-4b12-826f-475452a85251
+        plugin: rewrite
+        source: vadym_myhalchuk
+        weight: 0
+        label: Переписування
+      4f7662bc-0c09-43a4-be4d-cca5bdfeefde:
+        text: 'Вадим Михальчук. [media_name]. [gallery]. [height] × [weight] cm, [technic]'
+        uuid: 4f7662bc-0c09-43a4-be4d-cca5bdfeefde
+        plugin: rewrite
+        source: mykchalchuk
+        weight: 0
+        label: Переписування
+      bd50efbd-faad-4549-ba46-bb94abf5edf8:
+        text: '[media_name].'
+        uuid: bd50efbd-faad-4549-ba46-bb94abf5edf8
+        plugin: rewrite
+        source: media_name
+        weight: 0
+        label: Переписування
+label: Media
+id: media
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ;
+  no_headers: false
+  line_limit: 100
+processor: 'entity:media'
+processor_configuration:
+  values:
+    bundle: image
+  langcode: uk
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  skip_validation: false
+  skip_validation_types: {  }
+  authorize: true
+  revision: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  '':
+    value: ''
+    label: ''
+    machine_name: ''
+    type: csv
+  vadym_myhalchuk:
+    value: 'Вадим Михальчук'
+    label: 'Вадим Михальчук'
+    machine_name: vadym_myhalchuk
+    type: blank
+  gallery:
+    value: Gallery
+    label: Gallery
+    machine_name: gallery
+    type: csv
+  media_url:
+    value: 'Media URL'
+    label: 'Media URL'
+    machine_name: media_url
+    type: csv
+  height:
+    value: Height
+    label: Height
+    machine_name: height
+    type: csv
+  code:
+    value: Code
+    label: Code
+    machine_name: code
+    type: csv
+  weight:
+    value: Weight
+    label: Weight
+    machine_name: weight
+    type: csv
+  media_name:
+    value: 'Media name'
+    label: 'Media name'
+    machine_name: media_name
+    type: csv
+  mykchalchuk:
+    value: Mykchalchuk
+    label: Mykchalchuk
+    machine_name: mykchalchuk
+    type: blank
+  technic:
+    value: Technic
+    label: Technic
+    machine_name: technic
+    type: csv
+mappings:
+  -
+    target: field_gallery
+    map:
+      target_id: gallery
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 1
+      autocreate_bundle: gallery
+  -
+    target: field_code
+    map:
+      value: code
+    settings:
+      language: ''
+    unique:
+      value: 1
+  -
+    target: field_media_image
+    map:
+      target_id: media_url
+      alt: vadym_myhalchuk
+      title: mykchalchuk
+    settings:
+      language: ''
+      reference_by: fid
+      autocreate: 1
+      existing: '1'
+      autocreate_bundle: false
+  -
+    target: field_height
+    map:
+      value: height
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_weight
+    map:
+      value: weight
+    settings:
+      language: ''
+    unique: {  }
+  -
+    target: name
+    map:
+      value: media_name
+    settings:
+      language: ''
+    unique: {  }
+  -
+    target: field_technic
+    map:
+      value: technic
+    settings:
+      language: ''
+    unique: {  }

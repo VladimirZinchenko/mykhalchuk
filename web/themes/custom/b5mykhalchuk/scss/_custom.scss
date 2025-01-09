@@ -512,3 +512,17 @@ footer.footer-dark {
 		}
 	}
 }
+
+// Media
+.media-gallery {
+	column-gap: 0.5rem;
+	@include media-breakpoint-up(md) {
+		columns: 2 auto;
+	}
+	@include media-breakpoint-up(lg) {
+		columns: 3 auto;
+	}
+	@include media-breakpoint-up(xl) {
+		columns: 4 auto;
+	}
+}

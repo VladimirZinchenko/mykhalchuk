@@ -1,17 +1,17 @@
-uuid: 772f2a89-017e-4b98-b704-032196b3296a
+uuid: fdf4f749-7dbf-4fce-a72e-98ab62e963d9
 langcode: uk
 status: true
 dependencies:
   config:
-    - field.field.node.media_item.body
-    - field.field.node.media_item.field_media
-    - node.type.media_item
+    - field.field.node.media_image_display.body
+    - field.field.node.media_image_display.field_media_image
+    - node.type.media_image_display
   module:
     - text
     - user
-id: node.media_item.default
+id: node.media_image_display.default
 targetEntityType: node
-bundle: media_item
+bundle: media_image_display
 mode: default
 content:
   body:
@@ -21,7 +21,7 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_media:
+  field_media_image:
     type: entity_reference_entity_view
     label: above
     settings:

@@ -1,20 +1,20 @@
-uuid: 7400a96c-7f51-4c17-a3d8-41d5fb87591f
+uuid: 6b7ead61-3fbe-4f0d-a5ba-b08d4cf4bd4e
 langcode: uk
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.media_item.body
-    - field.field.node.media_item.field_media
+    - field.field.node.media_image_display.body
+    - field.field.node.media_image_display.field_media_image
     - image.style.media_library
-    - node.type.media_item
+    - node.type.media_image_display
   module:
     - media
     - text
     - user
-id: node.media_item.teaser
+id: node.media_image_display.teaser
 targetEntityType: node
-bundle: media_item
+bundle: media_image_display
 mode: teaser
 content:
   body:
@@ -23,23 +23,19 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
-  field_media:
+  field_media_image:
     type: media_thumbnail
     label: above
     settings:
-      image_link: content
+      image_link: ''
       image_style: media_library
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 1
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
+    weight: 0
     region: content
 hidden:
   langcode: true
+  links: true

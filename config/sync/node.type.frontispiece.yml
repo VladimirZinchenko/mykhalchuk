@@ -7,14 +7,14 @@ dependencies:
 third_party_settings:
   menu_ui:
     available_menus:
-      - footer
       - footer-1
       - footer-2
+      - footer
       - main
     parent: 'main:'
-name: Frontispiece
+name: Фронтиспіс
 type: frontispiece
-description: 'Сторінки з тлом'
+description: '<em>Сторінки</em> з кольоровим тлом та матеріалами, зазвичай, незмінюваного вмісту.'
 help: null
 new_revision: false
 preview_mode: 1

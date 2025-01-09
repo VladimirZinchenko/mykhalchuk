@@ -1,13 +1,13 @@
-uuid: c61edf56-34c3-40b1-8e75-41e14f220e78
+uuid: e855a1ee-4f01-4b6c-81f5-83df79921328
 langcode: uk
 status: true
 dependencies:
   config:
-    - node.type.media_item
-id: node.media_item.promote
+    - node.type.media_image_display
+id: node.media_image_display.promote
 field_name: promote
 entity_type: node
-bundle: media_item
+bundle: media_image_display
 label: 'Винесено на головну сторінку'
 description: ''
 required: false

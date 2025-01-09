@@ -3,7 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.image.feeds_item
+    - field.field.media.image.field_code
+    - field.field.media.image.field_gallery
+    - field.field.media.image.field_height
     - field.field.media.image.field_media_image
+    - field.field.media.image.field_technic
+    - field.field.media.image.field_weight
     - image.style.large
     - media.type.image
   module:
@@ -15,20 +21,63 @@ targetEntityType: media
 bundle: image
 mode: default
 content:
+  field_gallery:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_height:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_media_image:
     type: image
     label: visually_hidden
     settings:
-      image_style: large
       image_link: ''
+      image_style: large
       image_loading:
         attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_technic:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_weight:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
     weight: 1
     region: content
 hidden:
   created: true
+  feeds_item: true
+  field_code: true
   langcode: true
-  name: true
   thumbnail: true
   uid: true

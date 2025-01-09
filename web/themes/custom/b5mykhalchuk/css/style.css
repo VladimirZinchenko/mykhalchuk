@@ -11889,4 +11889,22 @@ footer.footer-dark a img {
 .text-bg-secondary .node__content .field--name-body h2, .text-bg-secondary .node__content .field--name-body .h2, .text-bg-secondary .node__content .field--name-body h3, .text-bg-secondary .node__content .field--name-body .h3 {
   color: var(--bs-heading-color);
 }
+.media-gallery {
+  column-gap: 0.5rem;
+}
+@media (min-width: 768px) {
+  .media-gallery {
+    columns: 2 auto;
+  }
+}
+@media (min-width: 992px) {
+  .media-gallery {
+    columns: 3 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .media-gallery {
+    columns: 4 auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
