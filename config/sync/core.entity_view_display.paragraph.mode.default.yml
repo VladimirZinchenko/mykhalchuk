@@ -1,0 +1,45 @@
+uuid: ea62cfa1-117c-438a-83c6-98bf72234436
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mode.field_image
+    - field.field.paragraph.mode.field_subtitle
+    - field.field.paragraph.mode.field_text
+    - image.style.large
+    - paragraphs.paragraphs_type.mode
+  module:
+    - image
+    - text
+id: paragraph.mode.default
+targetEntityType: paragraph
+bundle: mode
+mode: default
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_subtitle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

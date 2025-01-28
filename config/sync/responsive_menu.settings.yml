@@ -6,10 +6,10 @@ off_canvas_menus: 'main,account'
 horizontal_wrapping_element: nav
 horizontal_breakpoint: sm-max
 horizontal_media_query: '(max-width: 767.98px)'
-include_css: false
+include_css: true
 off_canvas_position: right
 off_canvas_theme: theme-dark
-pagedim: none
+pagedim: pagedim-black
 horizontal_superfish: false
 horizontal_superfish_delay: 300
 horizontal_superfish_speed: 100

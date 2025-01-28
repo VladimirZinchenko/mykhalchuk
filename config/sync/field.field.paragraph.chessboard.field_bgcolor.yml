@@ -1,0 +1,21 @@
+uuid: d92a6532-4c3c-4a95-afbc-9ec403f11a40
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bgcolor
+    - paragraphs.paragraphs_type.chessboard
+  module:
+    - options
+id: paragraph.chessboard.field_bgcolor
+field_name: field_bgcolor
+entity_type: paragraph
+bundle: chessboard
+label: bgcolor
+description: 'Вибір кольору фону для тексту'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

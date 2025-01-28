@@ -5,12 +5,12 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.frontispiece.body
-    - field.field.node.frontispiece.field_image
+    - field.field.node.frontispiece.field_hero_text
+    - field.field.node.frontispiece.field_image_bg
+    - field.field.node.frontispiece.field_image_hero
     - field.field.node.frontispiece.field_paragraph
-    - image.style.medium
     - node.type.frontispiece
   module:
-    - image
     - text
     - user
 id: node.frontispiece.teaser
@@ -26,18 +26,10 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_image:
-    type: image
-    label: hidden
-    settings:
-      image_link: content
-      image_style: medium
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
-    weight: -1
-    region: content
 hidden:
+  field_hero_text: true
+  field_image_bg: true
+  field_image_hero: true
   field_paragraph: true
   langcode: true
   links: true

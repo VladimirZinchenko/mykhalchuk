@@ -1,4 +1,4 @@
-uuid: d5067df8-d96c-4ad5-b4a0-74dd223306ed
+uuid: 48007931-3e05-4752-ad05-1c168cd9d276
 langcode: uk
 status: true
 dependencies:
@@ -16,39 +16,40 @@ dependencies:
 third_party_settings:
   feeds_tamper:
     tampers:
-      1150fb17-6ebd-469b-b33c-80475d012b0c:
-        text: 'https://mykhalchuk.ddev.site/sites/default/files/upload/[media_url]'
-        uuid: 1150fb17-6ebd-469b-b33c-80475d012b0c
+      0b91197b-0103-4a1e-9a2f-82c99e7c4566:
+        separator: ','
+        limit: null
+        uuid: 0b91197b-0103-4a1e-9a2f-82c99e7c4566
+        plugin: explode
+        source: gallery
+        weight: 0
+        label: Explode
+      c430dab6-0a49-4098-8ccb-3f66b8f53d08:
+        text: 'https://mykhalchuk.ddev.site/sites/default/files/upload/[media]'
+        uuid: c430dab6-0a49-4098-8ccb-3f66b8f53d08
         plugin: rewrite
-        source: media_url
+        source: media
         weight: 0
         label: Переписування
-      9fef7c22-37b4-4b12-826f-475452a85251:
-        text: 'Вадим Михальчук. [media_name]'
-        uuid: 9fef7c22-37b4-4b12-826f-475452a85251
+      83978971-72e9-452c-acc1-f76bed3f11e7:
+        text: 'Вадим Михальчук. [name]'
+        uuid: 83978971-72e9-452c-acc1-f76bed3f11e7
         plugin: rewrite
-        source: vadym_myhalchuk
+        source: mykhalchuk_vadym
         weight: 0
         label: Переписування
-      4f7662bc-0c09-43a4-be4d-cca5bdfeefde:
-        text: 'Вадим Михальчук. [media_name]. [gallery]. [height] × [weight] cm, [technic]'
-        uuid: 4f7662bc-0c09-43a4-be4d-cca5bdfeefde
+      781c8577-adbd-4023-89b6-3514e8f979f9:
+        text: 'Вадим Михальчук. [name]. [gallery]. [height] × [weight] cm, [technic]'
+        uuid: 781c8577-adbd-4023-89b6-3514e8f979f9
         plugin: rewrite
-        source: mykchalchuk
-        weight: 0
-        label: Переписування
-      bd50efbd-faad-4549-ba46-bb94abf5edf8:
-        text: '[media_name].'
-        uuid: bd50efbd-faad-4549-ba46-bb94abf5edf8
-        plugin: rewrite
-        source: media_name
+        source: vadym_mykhalchuk
         weight: 0
         label: Переписування
 label: Media
 id: media
-description: ''
+description: 'Імпорт Медіа'
 help: ''
-import_period: -1
+import_period: 3600
 fetcher: upload
 fetcher_configuration:
   allowed_extensions: 'txt csv tsv xml opml'
@@ -75,66 +76,52 @@ processor_configuration:
   owner_feed_author: false
   owner_id: 0
 custom_sources:
-  '':
-    value: ''
-    label: ''
-    machine_name: ''
+  code:
+    value: Code
+    label: Code
+    machine_name: code
     type: csv
-  vadym_myhalchuk:
-    value: 'Вадим Михальчук'
-    label: 'Вадим Михальчук'
-    machine_name: vadym_myhalchuk
-    type: blank
   gallery:
     value: Gallery
     label: Gallery
     machine_name: gallery
     type: csv
-  media_url:
-    value: 'Media URL'
-    label: 'Media URL'
-    machine_name: media_url
+  name:
+    value: Name
+    label: Name
+    machine_name: name
     type: csv
+  media:
+    value: Media
+    label: Media
+    machine_name: media
+    type: csv
+  mykhalchuk_vadym:
+    value: 'Mykhalchuk Vadym'
+    label: 'Mykhalchuk Vadym'
+    machine_name: mykhalchuk_vadym
+    type: blank
+  vadym_mykhalchuk:
+    value: 'Vadym Mykhalchuk'
+    label: 'Vadym Mykhalchuk'
+    machine_name: vadym_mykhalchuk
+    type: blank
   height:
     value: Height
     label: Height
     machine_name: height
-    type: csv
-  code:
-    value: Code
-    label: Code
-    machine_name: code
     type: csv
   weight:
     value: Weight
     label: Weight
     machine_name: weight
     type: csv
-  media_name:
-    value: 'Media name'
-    label: 'Media name'
-    machine_name: media_name
-    type: csv
-  mykchalchuk:
-    value: Mykchalchuk
-    label: Mykchalchuk
-    machine_name: mykchalchuk
-    type: blank
   technic:
     value: Technic
     label: Technic
     machine_name: technic
     type: csv
 mappings:
-  -
-    target: field_gallery
-    map:
-      target_id: gallery
-    settings:
-      language: ''
-      reference_by: name
-      autocreate: 1
-      autocreate_bundle: gallery
   -
     target: field_code
     map:
@@ -144,15 +131,32 @@ mappings:
     unique:
       value: 1
   -
+    target: field_gallery
+    map:
+      target_id: gallery
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 1
+      autocreate_bundle: gallery
+      feeds_item: false
+  -
+    target: name
+    map:
+      value: name
+    settings:
+      language: ''
+    unique: {  }
+  -
     target: field_media_image
     map:
-      target_id: media_url
-      alt: vadym_myhalchuk
-      title: mykchalchuk
+      target_id: media
+      alt: mykhalchuk_vadym
+      title: vadym_mykhalchuk
     settings:
       language: ''
       reference_by: fid
-      autocreate: 1
+      autocreate: 0
       existing: '1'
       autocreate_bundle: false
   -
@@ -160,21 +164,14 @@ mappings:
     map:
       value: height
     settings:
-      language: null
+      language: ''
     unique: {  }
   -
     target: field_weight
     map:
       value: weight
     settings:
-      language: ''
-    unique: {  }
-  -
-    target: name
-    map:
-      value: media_name
-    settings:
-      language: ''
+      language: null
     unique: {  }
   -
     target: field_technic

@@ -1,0 +1,53 @@
+uuid: c52c0ec7-cc49-440e-b0b1-fa4a73661a2d
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.chessboard.field_bgcolor
+    - field.field.paragraph.chessboard.field_image
+    - field.field.paragraph.chessboard.field_imgposition
+    - field.field.paragraph.chessboard.field_text
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.chessboard
+  module:
+    - image
+    - imce
+    - text
+id: paragraph.chessboard.default
+targetEntityType: paragraph
+bundle: chessboard
+mode: default
+content:
+  field_bgcolor:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings:
+      imce:
+        enabled: true
+  field_imgposition:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

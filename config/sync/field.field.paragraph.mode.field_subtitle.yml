@@ -1,0 +1,19 @@
+uuid: e8c50e07-2523-40cf-8e84-e1ebe9a958a1
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitle
+    - paragraphs.paragraphs_type.mode
+id: paragraph.mode.field_subtitle
+field_name: field_subtitle
+entity_type: paragraph
+bundle: mode
+label: Subtitle
+description: 'h3 підзаголовок параграфу'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

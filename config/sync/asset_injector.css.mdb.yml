@@ -1,0 +1,25 @@
+uuid: 50cc1022-424c-4070-9380-aa54d03035eb
+langcode: uk
+status: true
+dependencies: {  }
+id: mdb
+label: mdb
+code: |-
+  .navbar.navbar-before-scroll.navbar-after-scroll {
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+  }
+  /* Transition after scrolling */
+    .navbar-after-scroll {
+      transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    }
+
+    /* Transition to the initial state */
+    .navbar-before-scroll {
+      transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

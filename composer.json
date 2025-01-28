@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^2.0",
         "drupal/admin_toolbar": "^3.3",
+        "drupal/asset_injector": "^2.21",
         "drupal/back_to_top": "^3.0",
         "drupal/bg_image_formatter": "^1.17",
         "drupal/block_id": "^2.0",
@@ -41,7 +42,9 @@
         "drupal/responsive_menu": "^5.0@alpha",
         "drupal/scss_compiler": "^1.2",
         "drupal/semanticviews": "^3.0",
+        "drupal/simple_timeline": "^2.0",
         "drupal/tamper": "^1.0@alpha",
+        "drupal/twbstools": "^2.1",
         "drupal/twig_tweak": "^3.2",
         "drupal/views_bootstrap": "^5.5@alpha",
         "drupal/xmlsitemap": "^2.0@beta",

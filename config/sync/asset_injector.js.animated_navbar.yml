@@ -1,0 +1,24 @@
+uuid: f745a384-a1f6-45b4-bb34-fb39b966da89
+langcode: uk
+status: true
+dependencies: {  }
+id: animated_navbar
+label: 'animated navbar'
+code: |-
+  const navbar = document.getElementById("main-navbar")
+
+  window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 0) {
+      navbar.classList.add("navbar-after-scroll")
+    } else {
+      navbar.classList.remove("navbar-after-scroll")
+    }
+  })
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: false
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

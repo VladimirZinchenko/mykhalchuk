@@ -43,7 +43,7 @@
  */
 #}
 {%
-set nav_classes = 'navbar navbar-expand-lg' ~
+set nav_classes = 'navbar navbar-expand-lg fixed-top navbar-before-scroll' ~
   (b5_navbar_schema != 'none' ? " navbar-#{b5_navbar_schema}" : ' ') ~
   (b5_navbar_schema != 'none' ? (b5_navbar_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
   (b5_navbar_bg_schema != 'none' ? " bg-#{b5_navbar_bg_schema}" : ' ')
@@ -58,7 +58,8 @@ set footer_classes = ' ' ~
 
 <header>
   {% if page.nav_branding or page.nav_main or page.nav_additional %}
-  <nav class="{{ nav_classes }}">
+  <div class="navbar-top"></div>
+  <nav id="main-navbar" class="{{ nav_classes }}">
     <div class="{{ b5_top_container }} d-flex">
       {{ page.nav_branding }}
 		
@@ -82,9 +83,10 @@ set footer_classes = ' ' ~
     </div>
   </nav>
   {% endif %}
-  <div class="navbar-bottom"></div>
   {{ page.header }}
 </header>
+
+<div class="bg-wrapper">
 
 <main role="main">
   <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
@@ -124,10 +126,15 @@ set footer_classes = ' ' ~
 
 </main>
 
-{% if page.footer or page.footer_top %}
+{% if page.footer_top %}
+{{ page.footer_top }}
+{% endif %}
+
+</div>
+
+{% if page.footer %}
 <footer class="mt-auto {{ footer_classes }}">
   <div class="{{ b5_top_container }}">
-	{{ page.footer_top }}
     {{ page.footer }}
   </div>
 </footer>

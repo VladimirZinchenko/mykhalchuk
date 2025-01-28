@@ -1,0 +1,106 @@
+uuid: 21c9aea7-8ac8-4d69-b4d8-922ab9da7929
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.gallery.field_image
+    - taxonomy.vocabulary.gallery
+  module:
+    - feeds_tamper
+    - taxonomy
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      426934c7-c4f5-4202-af78-1b8e2c5a2252:
+        text: 'https://mykhalchuk.ddev.site/sites/default/files/upload/[image]'
+        uuid: 426934c7-c4f5-4202-af78-1b8e2c5a2252
+        plugin: rewrite
+        source: image
+        weight: 0
+        label: Переписування
+      c9df9e6c-3ae6-4727-a940-b3fb80a50a65:
+        text: '[name] gallery cover'
+        uuid: c9df9e6c-3ae6-4727-a940-b3fb80a50a65
+        plugin: rewrite
+        source: gallery_cover
+        weight: 0
+        label: Переписування
+label: Gallery
+id: gallery
+description: 'Імпорт Галерей (термін)'
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ;
+  no_headers: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  values:
+    vid: gallery
+  langcode: uk
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  skip_validation: false
+  skip_validation_types: {  }
+  authorize: false
+  revision: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  image:
+    value: Image
+    label: Image
+    machine_name: image
+    type: csv
+  gallery_cover:
+    value: 'Gallery cover'
+    label: 'Gallery cover'
+    machine_name: gallery_cover
+    type: blank
+  name:
+    value: Name
+    label: Name
+    machine_name: name
+    type: csv
+  description:
+    value: Description
+    label: Description
+    machine_name: description
+    type: csv
+mappings:
+  -
+    target: field_image
+    map:
+      target_id: image
+      alt: gallery_cover
+      title: ''
+    settings:
+      language: ''
+      reference_by: fid
+      autocreate: 0
+      existing: '1'
+      autocreate_bundle: false
+  -
+    target: name
+    map:
+      value: name
+    settings:
+      language: ''
+    unique:
+      value: 1
+  -
+    target: description
+    map:
+      value: description
+    settings:
+      language: ''
+      format: plain_text

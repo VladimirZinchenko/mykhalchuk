@@ -1,0 +1,38 @@
+uuid: ccc08649-a021-47d7-88aa-d7235a777965
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_image
+    - taxonomy.vocabulary.gallery
+  module:
+    - image
+id: taxonomy_term.gallery.field_image
+field_name: field_image
+entity_type: taxonomy_term
+bundle: gallery
+label: Image
+description: 'Головне зображення <em>Галереї</em>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: field/image/term
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 136a7655-4a91-4d90-813c-82c9ecc26495
+    alt: ''
+    title: ''
+    width: 1920
+    height: 1602
+field_type: image

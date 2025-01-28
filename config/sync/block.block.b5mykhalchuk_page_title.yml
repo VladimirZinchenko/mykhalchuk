@@ -11,7 +11,7 @@ _core:
 id: b5mykhalchuk_page_title
 theme: b5mykhalchuk
 region: content
-weight: -5
+weight: -9
 provider: null
 plugin: page_title_block
 settings:
@@ -23,4 +23,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "/about/*\r\n/about\r\n<front>"
+    pages: "/about/*\r\n/about\r\n<front>\r\n/copyrights"

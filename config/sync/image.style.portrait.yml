@@ -1,0 +1,23 @@
+uuid: 7980fa8a-211a-4ae8-975d-6434b702f4c7
+langcode: uk
+status: true
+dependencies: {  }
+name: portrait
+label: 'Портрет (320×480)'
+effects:
+  385870a0-660d-4f32-8ae5-4505546c51fd:
+    uuid: 385870a0-660d-4f32-8ae5-4505546c51fd
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 480
+      upscale: false
+  1f877a47-7148-4d32-9ee2-708cd2b883da:
+    uuid: 1f877a47-7148-4d32-9ee2-708cd2b883da
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 320
+      height: 480
+      anchor: center-center

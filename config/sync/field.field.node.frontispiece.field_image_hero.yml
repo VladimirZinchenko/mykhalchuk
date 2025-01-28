@@ -1,0 +1,38 @@
+uuid: 51cee58b-0e90-4dd1-b1d1-39d18ad63a32
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_hero
+    - node.type.frontispiece
+  module:
+    - image
+id: node.frontispiece.field_image_hero
+field_name: field_image_hero
+entity_type: node
+bundle: frontispiece
+label: 'Image Hero'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: field/image/hero
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: f3b068b2-8636-40f7-a198-86e15d2befce
+    alt: ''
+    title: ''
+    width: 1920
+    height: 1440
+field_type: image

@@ -91,7 +91,7 @@ content:
     weight: 2
     region: content
     settings:
-      size: 60
+      size: 120
       placeholder: ''
     third_party_settings: {  }
   path:

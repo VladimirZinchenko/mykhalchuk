@@ -1,0 +1,29 @@
+uuid: de0c0f6a-5112-44c3-b0f4-4a548f9eacda
+langcode: uk
+status: true
+dependencies:
+  config:
+    - views.view.blog
+  module:
+    - system
+    - views
+  theme:
+    - b5mykhalchuk
+id: b5mykhalchuk_views_block__blog_block_2
+theme: b5mykhalchuk
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:blog-block_2'
+settings:
+  id: 'views_block:blog-block_2'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/blog/*'

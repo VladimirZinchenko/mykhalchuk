@@ -1,0 +1,30 @@
+uuid: 8efc5d95-f61e-476c-bbc1-da85a2f1df8f
+langcode: uk
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_bgcolor
+field_name: field_bgcolor
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: text_bg_light
+      label: text-bg-light
+    -
+      value: text_bg_dark
+      label: text-bg-dark
+    -
+      value: text_bg_secondary
+      label: text-bg-secondary
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b94bf39c21b0f8a18f03304c34751b78",
+    "content-hash": "42f52131722308f40e32c16cb3b963dc",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1225,6 +1225,55 @@
             }
         },
         {
+            "name": "drupal/asset_injector",
+            "version": "2.21.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/asset_injector.git",
+                "reference": "8.x-2.21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/asset_injector-8.x-2.21.zip",
+                "reference": "8.x-2.21",
+                "shasum": "24dc111e995d6a33cb9f11f106b0d1e716e92767"
+            },
+            "require": {
+                "drupal/core": "^10.3 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.21",
+                    "datestamp": "1723044656",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Decker",
+                    "homepage": "https://www.drupal.org/u/pookmish"
+                },
+                {
+                    "name": "Axel Rutz",
+                    "homepage": "https://www.drupal.org/u/axelrutz"
+                }
+            ],
+            "description": "Adds CSS or JS to the page output based on configurable rules.",
+            "homepage": "http://drupal.org/project/asset_injector",
+            "support": {
+                "source": "https://git.drupalcode.org/project/asset_injector",
+                "issues": "https://www.drupal.org/project/issues/asset_injector"
+            }
+        },
+        {
             "name": "drupal/back_to_top",
             "version": "3.0.2",
             "source": {
@@ -2154,17 +2203,17 @@
         },
         {
             "name": "drupal/feeds",
-            "version": "3.0.0-rc3",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/feeds.git",
-                "reference": "8.x-3.0-rc3"
+                "reference": "8.x-3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/feeds-8.x-3.0-rc3.zip",
-                "reference": "8.x-3.0-rc3",
-                "shasum": "21d1f481da86e812288e8dc5b6e240263e9b8a82"
+                "url": "https://ftp.drupal.org/files/projects/feeds-8.x-3.0.zip",
+                "reference": "8.x-3.0",
+                "shasum": "d6cbfdcc6ece690fe3b20dd62285eea91113089a"
             },
             "require": {
                 "drupal/core": "^10.1 || ^11",
@@ -2177,11 +2226,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.0-rc3",
-                    "datestamp": "1733412633",
+                    "version": "8.x-3.0",
+                    "datestamp": "1736951425",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "drush": {
@@ -2786,11 +2835,11 @@
             ],
             "authors": [
                 {
-                    "name": "Berdir",
+                    "name": "berdir",
                     "homepage": "https://www.drupal.org/user/214652"
                 },
                 {
-                    "name": "Dave Reid",
+                    "name": "dave reid",
                     "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
@@ -2812,17 +2861,17 @@
         },
         {
             "name": "drupal/quick_node_clone",
-            "version": "1.19.0",
+            "version": "1.20.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/quick_node_clone.git",
-                "reference": "8.x-1.19"
+                "reference": "8.x-1.20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/quick_node_clone-8.x-1.19.zip",
-                "reference": "8.x-1.19",
-                "shasum": "b9a632bdca772f800a179aa7fbefc7f97aa50f80"
+                "url": "https://ftp.drupal.org/files/projects/quick_node_clone-8.x-1.20.zip",
+                "reference": "8.x-1.20",
+                "shasum": "455d033a523b3d10f8e084e7ab6018187f30e3e8"
             },
             "require": {
                 "drupal/core": "^10 || ^11"
@@ -2834,8 +2883,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.19",
-                    "datestamp": "1730993373",
+                    "version": "8.x-1.20",
+                    "datestamp": "1736808274",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3062,6 +3111,70 @@
             }
         },
         {
+            "name": "drupal/simple_timeline",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/simple_timeline.git",
+                "reference": "8.x-2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/simple_timeline-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "aa34a2498238e4dfe8564f4935b473571e22b581"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.0",
+                    "datestamp": "1695223312",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "abhi_khandelwal",
+                    "homepage": "https://www.drupal.org/user/3814534"
+                },
+                {
+                    "name": "alansaviolobo",
+                    "homepage": "https://www.drupal.org/user/2190830"
+                },
+                {
+                    "name": "chandra gowsalya kannan",
+                    "homepage": "https://www.drupal.org/user/3752381"
+                },
+                {
+                    "name": "flocondetoile",
+                    "homepage": "https://www.drupal.org/user/2006064"
+                },
+                {
+                    "name": "guido_s",
+                    "homepage": "https://www.drupal.org/user/3629581"
+                }
+            ],
+            "description": "Provide a views style for displaying content in a vertical timeline",
+            "homepage": "https://www.drupal.org/project/simple_timeline",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/simple_timeline",
+                "issues": "https://www.drupal.org/project/issues/simple_timeline"
+            }
+        },
+        {
             "name": "drupal/tamper",
             "version": "1.0.0-alpha5",
             "source": {
@@ -3192,6 +3305,56 @@
             "homepage": "https://www.drupal.org/project/token",
             "support": {
                 "source": "https://git.drupalcode.org/project/token"
+            }
+        },
+        {
+            "name": "drupal/twbstools",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/twbstools.git",
+                "reference": "2.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/twbstools-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "b0e01119b3eaa24b16811f28c94e905e27e2d11c"
+            },
+            "require": {
+                "drupal/core": "^10.2 || ^11.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.0",
+                    "datestamp": "1736070447",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Vladimir Roudakov (vladimiraus)",
+                    "homepage": "https://www.drupal.org/u/vladimiraus",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "vladimiraus",
+                    "homepage": "https://www.drupal.org/user/673120"
+                }
+            ],
+            "description": "Companion module for [Bootstrap 5 theme] to provide better content editor and developer experience.",
+            "homepage": "https://www.drupal.org/project/twbstools",
+            "support": {
+                "source": "https://git.drupalcode.org/project/twbstools",
+                "issues": "https://www.drupal.org/project/issues/twbstools"
             }
         },
         {

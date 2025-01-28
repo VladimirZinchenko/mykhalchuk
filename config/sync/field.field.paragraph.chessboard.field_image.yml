@@ -1,37 +1,37 @@
-uuid: cfa0f3ae-7faf-4d19-9d4a-fc6ec02be4eb
+uuid: 01b521ec-ff09-48f9-81cd-53183e1aedb0
 langcode: uk
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
-    - node.type.frontispiece
+    - field.storage.paragraph.field_image
+    - paragraphs.paragraphs_type.chessboard
   module:
     - image
-id: node.frontispiece.field_image
+id: paragraph.chessboard.field_image
 field_name: field_image
-entity_type: node
-bundle: frontispiece
-label: Зображення
+entity_type: paragraph
+bundle: chessboard
+label: Image
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:file'
   handler_settings: {  }
-  file_directory: field/image/frontispiece
-  file_extensions: 'png gif jpg jpeg'
+  file_directory: field/image/paragraph
+  file_extensions: 'png gif jpg jpeg webp'
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''
   alt_field: true
-  alt_field_required: false
+  alt_field_required: true
   title_field: false
   title_field_required: false
   default_image:
     uuid: ''
-    alt: ''
+    alt: 'About Vadym Mykhalchuk'
     title: ''
     width: null
     height: null

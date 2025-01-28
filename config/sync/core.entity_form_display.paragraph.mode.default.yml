@@ -1,0 +1,48 @@
+uuid: fd21e3e3-7e72-4d82-82dc-4a3c6d0ac4a0
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mode.field_image
+    - field.field.paragraph.mode.field_subtitle
+    - field.field.paragraph.mode.field_text
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.mode
+  module:
+    - image
+    - imce
+    - text
+id: paragraph.mode.default
+targetEntityType: paragraph
+bundle: mode
+mode: default
+content:
+  field_image:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings:
+      imce:
+        enabled: true
+  field_subtitle:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
