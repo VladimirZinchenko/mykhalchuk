@@ -403,6 +403,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: 'd-none d-lg-block'
       header:
         area_text_custom:
           id: area_text_custom

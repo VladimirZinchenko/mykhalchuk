@@ -11,9 +11,6 @@ dependencies:
     - views
   theme:
     - b5mykhalchuk
-third_party_settings:
-  block_classes:
-    block_class: 'd-none d-lg-block'
 id: b5mykhalchuk_views_block__gallery_block_block_1
 theme: b5mykhalchuk
 region: content

@@ -633,6 +633,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: 'container py-4 my-5'
       header:
         area_text_custom:
           id: area_text_custom

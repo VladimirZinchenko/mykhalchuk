@@ -6,13 +6,11 @@ dependencies:
     - views.view.media_block
   module:
     - block_classes
+    - block_id
     - system
     - views
   theme:
     - b5mykhalchuk
-third_party_settings:
-  block_classes:
-    block_class: 'container py-4 my-5'
 id: b5mykhalchuk_views_block__media_block_block
 theme: b5mykhalchuk
 region: footer_top
