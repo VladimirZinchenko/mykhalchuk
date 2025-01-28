@@ -1,0 +1,29 @@
+uuid: d8838e9c-f0f3-42af-ba63-92161f226775
+langcode: uk
+status: true
+dependencies:
+  config:
+    - views.view.media_block
+  module:
+    - system
+    - views
+  theme:
+    - b5mykhalchuk
+id: b5mykhalchuk_views_block__media_block_block
+theme: b5mykhalchuk
+region: footer_top
+weight: 0
+provider: null
+plugin: 'views_block:media_block-block'
+settings:
+  id: 'views_block:media_block-block'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "<front>\r\n/gallery\r\n/gallery/*"
