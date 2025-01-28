@@ -6,12 +6,8 @@ dependencies:
     - 'block_content:basic:08f3b5b9-8e09-4bb0-8111-a3c825403775'
   module:
     - block_content
-    - block_id
   theme:
     - b5mykhalchuk
-third_party_settings:
-  block_id:
-    id: 1852d32e-682b-4f0d-8fa0-07083ba82851
 id: b5mykhalchuk_social
 theme: b5mykhalchuk
 region: footer
