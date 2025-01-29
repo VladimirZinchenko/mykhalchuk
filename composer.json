@@ -40,6 +40,7 @@
         "drupal/pathauto": "^1.11",
         "drupal/quick_node_clone": "^1.17",
         "drupal/responsive_menu": "^5.0@alpha",
+        "drupal/schema_metatag": "^3.0",
         "drupal/scss_compiler": "^1.2",
         "drupal/semanticviews": "^3.0",
         "drupal/simple_timeline": "^2.0",

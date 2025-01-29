@@ -76,6 +76,11 @@ custom_sources:
     label: Description
     machine_name: description
     type: csv
+  id:
+    value: ID
+    label: ID
+    machine_name: id
+    type: csv
 mappings:
   -
     target: field_image
@@ -95,8 +100,7 @@ mappings:
       value: name
     settings:
       language: ''
-    unique:
-      value: 1
+    unique: {  }
   -
     target: description
     map:
@@ -104,3 +108,10 @@ mappings:
     settings:
       language: ''
       format: plain_text
+  -
+    target: tid
+    map:
+      value: id
+    settings: {  }
+    unique:
+      value: 1

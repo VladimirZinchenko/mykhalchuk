@@ -1,6 +1,48 @@
 _core:
   default_config_hash: tKLBW2GXZVLFXqS9QgLyfTuxCLc1u_quKPQLtCia-Bw
-entity_type_groups: {  }
+entity_type_groups:
+  comment:
+    comment:
+      basic: basic
+  feeds_feed:
+    gallery:
+      basic: basic
+    media:
+      basic: basic
+  file:
+    file:
+      basic: basic
+  media:
+    audio:
+      basic: basic
+    document:
+      basic: basic
+    image:
+      schema_image_object: schema_image_object
+    remote_video:
+      basic: basic
+    video:
+      basic: basic
+  node:
+    article:
+      open_graph: open_graph
+      schema_article: schema_article
+    frontispiece:
+      open_graph: open_graph
+      schema_article: schema_article
+      schema_web_page: schema_web_page
+    page:
+      advanced: advanced
+      open_graph: open_graph
+      schema_web_page: schema_web_page
+  taxonomy_term:
+    gallery:
+      basic: basic
+    tags:
+      advanced: advanced
+  user:
+    user:
+      basic: basic
 separator: ','
 tag_trim_method: beforeValue
 use_maxlength: true
@@ -8,5 +50,8 @@ tag_trim_maxlength:
   metatag_maxlength_title: null
   metatag_maxlength_description: null
   metatag_maxlength_abstract: null
+  metatag_maxlength_og_site_name: null
+  metatag_maxlength_og_title: null
+  metatag_maxlength_og_description: null
 tag_scroll_max_height: ''
 tag_trim_end: '|.,-:;/+&([{"'''
