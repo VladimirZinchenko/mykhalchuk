@@ -381,7 +381,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 14
+            max_length: 18
             word_boundary: false
             ellipsis: true
             more_link: false

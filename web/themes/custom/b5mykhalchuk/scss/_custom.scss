@@ -443,13 +443,16 @@ ul.timeline-list:after {
 
 
 .media-container {
-	.overlay {
+		.overlay {
 		left: 0;
 		right: 0;
 		overflow: hidden;
 		transition: .5s ease;
 		bottom: 0;
-		height: 25%;
+		height: 0;
+		@include media-breakpoint-up(sm) {
+			height: 25%;
+		}
 	}
 	@include media-breakpoint-up(md) {
 		&:hover {

@@ -220,7 +220,7 @@ display:
       pager:
         type: none
         options:
-          offset: 1
+          offset: 0
       exposed_form:
         type: basic
         options:

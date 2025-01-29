@@ -11550,7 +11550,12 @@ ul.timeline-list:after {
   overflow: hidden;
   transition: 0.5s ease;
   bottom: 0;
-  height: 25%;
+  height: 0;
+}
+@media (min-width: 576px) {
+  .media-container .overlay {
+    height: 25%;
+  }
 }
 @media (min-width: 768px) {
   .media-container:hover .overlay {
