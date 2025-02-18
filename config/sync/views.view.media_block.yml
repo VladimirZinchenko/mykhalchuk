@@ -524,11 +524,11 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: numeric
-          operator: '='
+          operator: '>'
           value:
             min: 470px
             max: 490px
-            value: '90'
+            value: '0'
           group: 1
           exposed: false
           expose:
@@ -568,11 +568,11 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: numeric
-          operator: '='
+          operator: '>'
           value:
             min: ''
             max: ''
-            value: '60'
+            value: '0'
           group: 1
           exposed: false
           expose:
