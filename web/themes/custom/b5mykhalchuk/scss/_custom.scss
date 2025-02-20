@@ -199,6 +199,9 @@ ul {
 .hero {
 	color: #FFFFFF;
 	height: 400px;
+	@include media-breakpoint-down(md) {
+		background-attachment: scroll;
+	}
 	@include media-breakpoint-up(lg) {
 		height: 100vh;
 	}

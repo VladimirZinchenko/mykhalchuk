@@ -11323,6 +11323,11 @@ code {
   color: #FFFFFF;
   height: 400px;
 }
+@media (max-width: 767.98px) {
+  .hero {
+    background-attachment: scroll;
+  }
+}
 @media (min-width: 992px) {
   .hero {
     height: 100vh;
