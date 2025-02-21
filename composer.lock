@@ -1163,7 +1163,7 @@
             "extra": {
                 "drupal": {
                     "version": "3.5.2",
-                    "datestamp": "1739914592",
+                    "datestamp": "1740098273",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
