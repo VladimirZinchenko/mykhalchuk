@@ -11512,7 +11512,7 @@ ul.timeline-list:after {
 }
 @media (max-width: 767.98px) {
   .glightbox-mobile .glightbox-container .gslide-description {
-    padding-bottom: 0;
+    padding-bottom: 0.5rem;
   }
 }
 @media (min-width: 992px) {

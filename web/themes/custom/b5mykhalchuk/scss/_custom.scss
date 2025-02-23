@@ -405,7 +405,7 @@ ul.timeline-list:after {
 
 .glightbox-mobile .glightbox-container .gslide-description {
 	@include media-breakpoint-down(md) {
-		padding-bottom: 0;
+		padding-bottom: 0.5rem;
 	}
 }
 
@@ -447,12 +447,12 @@ ul.timeline-list:after {
 
 .media-container {
 		.overlay {
-		left: 0;
-		right: 0;
-		overflow: hidden;
-		transition: .5s ease;
-		bottom: 0;
-		height: 0;
+			left: 0;
+			right: 0;
+			overflow: hidden;
+			transition: .5s ease;
+			bottom: 0;
+			height: 0;
 		@include media-breakpoint-up(sm) {
 			height: 25%;
 		}

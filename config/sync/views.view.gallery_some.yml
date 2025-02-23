@@ -183,21 +183,6 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        name:
-          id: name
-          table: taxonomy_term_field_data
-          field: name
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: taxonomy_term
-          entity_field: name
-          plugin_id: standard
-          order: DESC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
         random_1:
           id: random_1
           table: views
@@ -290,7 +275,7 @@ display:
           admin_label: 'Кнопка "Ще"'
           plugin_id: text_custom
           empty: false
-          content: '<div class="text-center h1 my-3"><a title="Дивитись більше галерей" href="/gallery" class="text-decoration-none">•••</a></div>'
+          content: '<div class="text-center h1"><a title="Дивитись більше галерей" href="/gallery" class="text-decoration-none">•••</a></div>'
           tokenize: false
       display_extenders: {  }
     cache_metadata:

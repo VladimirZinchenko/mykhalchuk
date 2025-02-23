@@ -3,6 +3,6 @@ langcode: uk
 status: true
 dependencies: {  }
 id: T43qaxwUQWS5cOCpwG2tGLGOF5UzykA0K-mCFL6oRhs
-label: 'https://mykhalchuk.ddev.site'
+label: 'https://mykhalchuk.org'
 context:
   language: uk
