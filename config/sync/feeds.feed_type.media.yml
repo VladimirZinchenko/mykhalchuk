@@ -25,7 +25,7 @@ third_party_settings:
         weight: 0
         label: Explode
       c430dab6-0a49-4098-8ccb-3f66b8f53d08:
-        text: 'https://mykhalchuk.ddev.site/sites/default/files/upload/[media]'
+        text: 'https://mykhalchuk.org/sites/default/files/upload/[media]'
         uuid: c430dab6-0a49-4098-8ccb-3f66b8f53d08
         plugin: rewrite
         source: media

@@ -12,7 +12,7 @@ third_party_settings:
   feeds_tamper:
     tampers:
       426934c7-c4f5-4202-af78-1b8e2c5a2252:
-        text: 'https://mykhalchuk.ddev.site/sites/default/files/upload/[image]'
+        text: 'https://mykhalchuk.org/sites/default/files/upload/[image]'
         uuid: 426934c7-c4f5-4202-af78-1b8e2c5a2252
         plugin: rewrite
         source: image

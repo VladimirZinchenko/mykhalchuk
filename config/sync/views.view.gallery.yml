@@ -295,7 +295,7 @@ display:
             attributes: class|title
           list:
             element_type: div
-            attributes: 'class|gallery-gallery gallery-media-col'
+            attributes: 'class|gallery-gallery gallery-media-col mb-5'
           row:
             element_type: div
             attributes: class|

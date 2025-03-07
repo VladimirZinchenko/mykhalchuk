@@ -9,5 +9,16 @@ label: Глобальне
 tags:
   canonical_url: '[current-page:url]'
   google_site_verification: zLPdg4_5Qs1feWemhOwvJ-xDOXQiKojraE7JVBJL1zs
+  image_src: '[site:url]themes/custom/b5mykhalchuk/img/social-media-vadym-mykhalchuk.jpg'
+  og_description: '[current-page:metatag:description]'
+  og_image: '[site:url]themes/custom/b5mykhalchuk/img/social-media-vadym-mykhalchuk.jpg'
+  og_image_alt: '[site:name]'
+  og_image_height: '1080'
+  og_image_type: image/jpeg
+  og_image_width: '864'
   og_site_name: '[site:name]'
+  og_title: '[current-page:title]'
+  og_type: website
+  og_url: '[current-page:url]'
+  rights: '&copy;[current-date:html_year] [site:name]'
   title: '[current-page:title] | [site:name]'
