@@ -1,0 +1,13 @@
+uuid: 27628dd4-f782-4688-ae78-6ee889f8bd03
+langcode: uk
+status: true
+dependencies: {  }
+id: node__frontispiece
+label: 'Вміст: Фронтиспіс'
+tags:
+  image_src: '[node:field_image_hero]'
+  og_image: '[node:field_image_hero]'
+  og_image_alt: '[node:field_image_hero:alt]'
+  og_image_height: '[node:field_image_hero:height]'
+  og_image_type: image/webp
+  og_image_width: '[node:field_image_hero:width]'

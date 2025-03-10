@@ -706,6 +706,7 @@ display:
             created: created
             changed: changed
             count: count
+            operations: operations
           default: changed
           info:
             fid:
@@ -758,12 +759,17 @@ display:
               empty_column: false
               responsive: ''
             count:
-              sortable: false
+              sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: priority-medium
+            operations:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
           override: true
           sticky: false
           summary: ''
@@ -822,7 +828,10 @@ display:
           admin_label: 'File usage'
           required: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
       path: admin/content/files
       menu:
         type: tab
