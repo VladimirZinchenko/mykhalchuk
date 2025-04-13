@@ -1,0 +1,29 @@
+uuid: ffc7aeb4-73b0-4c2f-ba52-92cc768c8843
+langcode: uk
+status: true
+dependencies:
+  config:
+    - views.view.hero_home
+  module:
+    - system
+    - views
+  theme:
+    - b5mykhalchuk
+id: b5mykhalchuk_views_block__hero_home_block_1
+theme: b5mykhalchuk
+region: header
+weight: 0
+provider: null
+plugin: 'views_block:hero_home-block_1'
+settings:
+  id: 'views_block:hero_home-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -200,6 +200,9 @@ ul {
 .hero {
 	color: #FFFFFF;
 	height: 400px;
+	h1 {
+		font-weight: 600;
+	}
 	@include media-breakpoint-down(md) {
 		background-attachment: scroll;
 	}
@@ -213,9 +216,6 @@ ul {
 	padding: ($spacer * 2) $spacer;
 	height: inherit;
 	background-color: rgba(0, 0, 0, 0.3);
-	h1 {
-		font-weight: 600;
-	}
 	p {
 		font-size: $h4-font-size;
 	}
@@ -240,6 +240,21 @@ ul {
 	}
 }
 
+.hero.carousel-item {
+	height: 100vh;
+	.row, .col-md-12, .col-12, .img-cover, .img-cover img {
+		height: inherit;
+	}
+	.img-cover img {
+		filter: brightness(0.7);
+	}
+	/*@include media-breakpoint-down(md {
+		.img-cover img {
+			height: 400px;
+		}
+	}*/
+}
+
 // Footer
 
 footer {
@@ -248,13 +263,12 @@ footer {
 
 .region.region-footer {
 	padding-top: 5rem;
-	@include media-breakpoint-up(sm) {
+	/*@include media-breakpoint-up(sm) {
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-image: url(img/footer-bg.webp);
 		background-position: 80%;
-	}
-
+	}*/
 	@include media-breakpoint-up(md) {
 		display: flex;
 		flex-direction: row;
@@ -271,10 +285,6 @@ footer {
 	a img {
 		filter: invert(1);
 	}
-}
-
-.region.region-footer-top {
-    background-color: rgba(0, 0, 0, .13);
 }
 
 // Frontispiece
@@ -354,9 +364,22 @@ ul.timeline-list:after {
 		margin-bottom: 0.5rem;
 	}
 	.overlay-content {
-		display: none;
-	}
+		font-size: $h4-font-size;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-align: center;
+			a {
+				color: white;
+			}
+		}
 	@include media-breakpoint-up(md) {
+		.overlay-content {
+			padding: 4rem;
+		}
 		.odd .overlay {
 			bottom: 100%;
 			height: 0;
@@ -374,25 +397,12 @@ ul.timeline-list:after {
 			width: 100%;
 			transition: .5s ease;
 		}
-		.overlay-content {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			-webkit-transform: translate(-50%, -50%);
-			-ms-transform: translate(-50%, -50%);
-			transform: translate(-50%, -50%);
-			text-align: center;
-				a {
-					color: white;
-				}
-		}
 		.odd:hover,
 		.even:hover {
 			.overlay {
 				height: 100%;
 			}
 			.overlay-content {
-				padding: 2rem;
 				display: block;
 			}
 		}
@@ -413,7 +423,7 @@ ul.timeline-list:after {
 .gallery-media-container {
 	@include media-breakpoint-up(lg) {
 		display: flex;
-		height: 290px;
+		height: 320px;
 		.box {
 			flex: 1;
 			overflow: hidden;
@@ -426,7 +436,7 @@ ul.timeline-list:after {
 			a > img {
 				object-fit: cover; 
 				transition: .5s ease;
-				height: 290px;
+				height: 320px;
 			}
 			span {
 				display: none;
@@ -435,7 +445,7 @@ ul.timeline-list:after {
 				flex: 1 1 50%;
 				a > img {
 					width: 100%;
-					height: 242px;
+					height: 272px;
 				}
 				span {
 					display: block;
