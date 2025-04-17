@@ -12,7 +12,7 @@ dependencies:
 id: b5mykhalchuk_views_block__timeline_paragraph_block_1
 theme: b5mykhalchuk
 region: content
-weight: -1
+weight: -2
 provider: null
 plugin: 'views_block:timeline_paragraph-block_1'
 settings:

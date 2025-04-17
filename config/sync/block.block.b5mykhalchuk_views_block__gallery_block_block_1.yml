@@ -12,7 +12,7 @@ dependencies:
 id: b5mykhalchuk_views_block__gallery_block_block_1
 theme: b5mykhalchuk
 region: content
-weight: -3
+weight: -4
 provider: null
 plugin: 'views_block:gallery_block-block_1'
 settings:

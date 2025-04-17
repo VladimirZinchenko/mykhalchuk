@@ -1,20 +1,22 @@
-uuid: 89d35016-a0ba-4b5b-80ce-42792b487ec1
+uuid: 28a29c72-df99-45f6-a9b7-df8ee99f375d
 langcode: uk
 status: true
 dependencies:
   config:
     - field.storage.media.field_gallery
+    - field.storage.media.field_height
     - field.storage.media.field_media_image
-    - media.type.image
+    - field.storage.media.field_weight
+    - image.style.portrait
   module:
     - image
     - media
-    - semanticviews
     - user
-id: gallery_block
-label: 'Gallery block'
+    - views_bootstrap
+id: gallery_home
+label: 'Gallery Home'
 module: views
-description: 'Медіа з будь-яких Галерей на Головній сторінці (PC).'
+description: 'Медіа з будь-яких Галерей на Головній сторінці (Mobile).'
 tag: ''
 base_table: media_field_data
 base_field: mid
@@ -25,8 +27,74 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Вибрані галереї'
+      title: 'Gallery Home'
       fields:
+        mid:
+          id: mid
+          table: media_field_data
+          field: mid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: media
+          entity_field: mid
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         field_gallery:
           id: field_gallery
           table: media__field_gallery
@@ -64,7 +132,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: div
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -90,23 +158,21 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        name:
-          id: name
-          table: media_field_data
-          field: name
+        field_media_image:
+          id: field_media_image
+          table: media__field_media_image
+          field: field_media_image
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: media
-          entity_field: media
           plugin_id: field
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: '/gallery/{{ field_gallery }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -120,8 +186,8 @@ display:
             target: ''
             nl2br: false
             max_length: 0
-            word_boundary: false
-            ellipsis: false
+            word_boundary: true
+            ellipsis: true
             more_link: false
             more_link_text: ''
             more_link_path: ''
@@ -141,11 +207,14 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
-          type: string
+          click_sort_column: target_id
+          type: image
           settings:
-            link_to_entity: false
-          group_column: value
+            image_link: ''
+            image_style: portrait
+            image_loading:
+              attribute: lazy
+          group_column: ''
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -155,10 +224,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_media_image:
-          id: field_media_image
-          table: media__field_media_image
-          field: field_media_image
+        field_height:
+          id: field_height
+          table: media__field_height
+          field: field_height
           relationship: none
           group_type: group
           admin_label: ''
@@ -204,11 +273,141 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: image_url
+          click_sort_column: value
+          type: number_integer
           settings:
-            image_style: landscape
-          group_column: ''
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_weight:
+          id: field_weight
+          table: media__field_weight
+          field: field_weight
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        name:
+          id: name
+          table: media_field_data
+          field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: media
+          entity_field: name
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 18
+            word_boundary: false
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: true
+            preserve_tags: ''
+            html: false
+          element_type: div
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -224,13 +423,13 @@ display:
           field: nothing
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'Display View'
           plugin_id: custom
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: true
-            text: "    <a href=\"/gallery/{{ field_gallery }}\"><img src=\"{{ field_media_image }}\" alt=\"{{ name }}\"></a>\r\n    <span class=\"p-4 text-center text-bg-secondary\">{{ name }} {{ field_gallery }}</span>"
+            text: '{{ field_media_image }}'
             make_link: false
             path: ''
             absolute: false
@@ -317,15 +516,50 @@ display:
           group: 1
           expose:
             operator: ''
-        bundle:
-          id: bundle
-          table: media_field_data
-          field: bundle
-          entity_type: media
-          entity_field: bundle
-          plugin_id: bundle
+        field_height_value:
+          id: field_height_value
+          table: media__field_height
+          field: field_height_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: numeric
+          operator: '>'
           value:
-            image: image
+            min: 470px
+            max: 490px
+            value: '0'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
         field_weight_value:
           id: field_weight_value
           table: media__field_weight
@@ -334,11 +568,11 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: numeric
-          operator: '>='
+          operator: '>'
           value:
             min: ''
             max: ''
-            value: '90'
+            value: '0'
           group: 1
           exposed: false
           expose:
@@ -371,22 +605,18 @@ display:
             default_group_multiple: {  }
             group_items: {  }
       style:
-        type: semanticviews_style
+        type: views_bootstrap_grid
         options:
           grouping: {  }
-          group:
-            element_type: h3
-            attributes: class|title
-          list:
-            element_type: div
-            attributes: 'class|gallery-media-container mb-4'
-          row:
-            element_type: div
-            attributes: class|box
-            last_every_nth: '0'
-            first_class: first
-            last_class: last
-            striping_classes: 'odd even'
+          row_class: mb-4
+          default_row_class: false
+          grid_class: ''
+          col_xs: col-6
+          col_sm: none
+          col_md: col-md-4
+          col_lg: none
+          col_xl: col-xl-2
+          col_xxl: none
       row:
         type: fields
         options:
@@ -403,7 +633,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      css_class: 'd-none d-lg-block'
+      css_class: d-lg-none
       header:
         area_text_custom:
           id: area_text_custom
@@ -414,7 +644,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: false
-          content: '<h2 class="text-center display-6 mb-4">Популярні галереї художніх творів</h2>'
+          content: '<h2 class="display-6 text-center mb-4">Популярні галереї художніх творів</h2>'
           tokenize: false
       footer:
         area:
@@ -439,9 +669,11 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.media.field_gallery'
+        - 'config:field.storage.media.field_height'
         - 'config:field.storage.media.field_media_image'
-  block_1:
-    id: block_1
+        - 'config:field.storage.media.field_weight'
+  block:
+    id: block
     display_title: Block
     display_plugin: block
     position: 2
@@ -460,4 +692,6 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.media.field_gallery'
+        - 'config:field.storage.media.field_height'
         - 'config:field.storage.media.field_media_image'
+        - 'config:field.storage.media.field_weight'

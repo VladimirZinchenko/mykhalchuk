@@ -12,7 +12,7 @@ dependencies:
 id: b5mykhalchuk_views_block__blog_block_1
 theme: b5mykhalchuk
 region: content
-weight: -2
+weight: -1
 provider: null
 plugin: 'views_block:blog-block_1'
 settings:

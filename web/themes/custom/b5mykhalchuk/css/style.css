@@ -11305,7 +11305,6 @@ code {
 }
 .field--name-body h3, .field--name-body .h3, .field--name-body h4, .field--name-body .h4 {
   color: #212529;
-  width: 30vw;
 }
 .text-bg-secondary .field--name-body h2, .text-bg-secondary .field--name-body .h2, .text-bg-secondary .field--name-body h3, .text-bg-secondary .field--name-body .h3 {
   color: var(--bs-heading-color);
