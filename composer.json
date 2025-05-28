@@ -47,9 +47,10 @@
         "drupal/tamper": "^1.0@alpha",
         "drupal/twbstools": "^2.1",
         "drupal/twig_tweak": "^3.2",
+        "drupal/upgrade_status": "^4.3",
         "drupal/views_bootstrap": "^5.5@alpha",
         "drupal/xmlsitemap": "^2.0@beta",
-        "drush/drush": "^12.4"
+        "drush/drush": "^13.6"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -59,10 +60,12 @@
     "config": {
         "allow-plugins": {
             "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
+            "php-http/discovery": true,
             "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "tbachert/spi": true
         },
         "sort-packages": true
     },
@@ -122,5 +125,8 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "drupal/core-dev": "10.4.7"
     }
 }
