@@ -5,6 +5,7 @@
 .user-logged-in {
 	.navbar {
 		top: 39.677px;
+		z-index: 500;
 	}
 	&.toolbar-tray-open {
 		.navbar {
@@ -454,7 +455,6 @@ ul.timeline-list:after {
 		}
 	}
 }
-
 
 .media-container {
 		.overlay {

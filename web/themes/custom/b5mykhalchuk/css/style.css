@@ -11208,6 +11208,7 @@ code {
 }
 .user-logged-in .navbar {
   top: 39.677px;
+  z-index: 500;
 }
 .user-logged-in.toolbar-tray-open .navbar {
   top: 78.677px;
