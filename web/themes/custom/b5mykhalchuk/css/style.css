@@ -11888,7 +11888,10 @@ a[class=button] {
   --bs-btn-disabled-bg: #f8f9fa;
   --bs-btn-disabled-border-color: #f8f9fa;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9e725e87ce0c9606cb795db102a4750993903eb7
 .accordion details {
   overflow: unset;
 }
@@ -11912,7 +11915,10 @@ a[class=button] {
   background-image: var(--bs-accordion-btn-active-icon);
   transform: unset;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9e725e87ce0c9606cb795db102a4750993903eb7
 .form-control.image-button {
   width: unset;
 }
@@ -11925,11 +11931,18 @@ a[class=button] {
 .form-select {
   min-width: 5rem;
 }
+<<<<<<< HEAD
 
 input.form-text {
   margin-top: 0;
 }
 input[type=search] {
+=======
+input.form-text {
+  margin-top: 0;
+}
+input[type="search"] {
+>>>>>>> 9e725e87ce0c9606cb795db102a4750993903eb7
   box-sizing: border-box;
 }
 
@@ -12125,7 +12138,10 @@ footer .region-footer {
 .region-nav-additional {
   flex-shrink: 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9e725e87ce0c9606cb795db102a4750993903eb7
 @media (min-width: 992px) {
   .region-nav-additional {
     display: flex;
@@ -12198,7 +12214,10 @@ a.tabledrag-handle .handle {
 table {
   caption-side: unset;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9e725e87ce0c9606cb795db102a4750993903eb7
 .admin-dblog .table .icon {
   background-color: var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg, var(--bs-table-bg))));
 }
@@ -12206,7 +12225,10 @@ table {
   box-shadow: unset;
   background-color: var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg, var(--bs-table-bg))));
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9e725e87ce0c9606cb795db102a4750993903eb7
 .progress {
   display: block;
   height: unset;

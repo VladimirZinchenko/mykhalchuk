@@ -50,7 +50,8 @@
         "drupal/views_bootstrap": "^5.5@alpha",
         "drupal/xmlsitemap": "^2.0@beta",
         "drush/drush": "^13.6",
-        "scssphp/scssphp": "^2.0"
+        "scssphp/scssphp": "^2.0",
+        "drush/drush": "^13.7"
     },
     "conflict": {
         "drupal/drupal": "*"
