@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "32c54094497dfa8344c4718d7fb84b53",
+    "content-hash": "f82948ee8adfe74ac01142111e32cd16",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1325,54 +1325,6 @@
             }
         },
         {
-            "name": "drupal/block_id",
-            "version": "2.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/block_id.git",
-                "reference": "2.0.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/block_id-2.0.6.zip",
-                "reference": "2.0.6",
-                "shasum": "f110f969bb156f33cd4066d8ada8709ac41eb384"
-            },
-            "require": {
-                "drupal/core": "^9 || ^10 || ^11"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.6",
-                    "datestamp": "1755597580",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "heni_deepak",
-                    "homepage": "https://www.drupal.org/user/3605091"
-                },
-                {
-                    "name": "radheymkumar",
-                    "homepage": "https://www.drupal.org/user/3069081"
-                }
-            ],
-            "description": "Adds an additional field to set the ID & classes of a block.",
-            "homepage": "https://www.drupal.org/project/block_id",
-            "support": {
-                "source": "https://git.drupalcode.org/project/block_id"
-            }
-        },
-        {
             "name": "drupal/bootstrap5",
             "version": "4.0.8",
             "source": {
@@ -1952,83 +1904,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/easy_breadcrumb",
                 "issues": "https://www.drupal.org/project/issues/easy_breadcrumb"
-            }
-        },
-        {
-            "name": "drupal/entity",
-            "version": "1.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/entity.git",
-                "reference": "8.x-1.8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity-8.x-1.8.zip",
-                "reference": "8.x-1.8",
-                "shasum": "61349682d0db8dead9d6b571ac6b4aeae08abb0f"
-            },
-            "require": {
-                "drupal/core": "^10.1 || ^11"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.8",
-                    "datestamp": "1787858234",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "berdir",
-                    "homepage": "https://www.drupal.org/user/214652"
-                },
-                {
-                    "name": "bojanz",
-                    "homepage": "https://www.drupal.org/user/86106"
-                },
-                {
-                    "name": "dawehner",
-                    "homepage": "https://www.drupal.org/user/99340"
-                },
-                {
-                    "name": "dixon_",
-                    "homepage": "https://www.drupal.org/user/239911"
-                },
-                {
-                    "name": "fago",
-                    "homepage": "https://www.drupal.org/user/16747"
-                },
-                {
-                    "name": "klausi",
-                    "homepage": "https://www.drupal.org/user/262198"
-                },
-                {
-                    "name": "mglaman",
-                    "homepage": "https://www.drupal.org/user/2416470"
-                },
-                {
-                    "name": "tr",
-                    "homepage": "https://www.drupal.org/user/202830"
-                },
-                {
-                    "name": "tstoeckler",
-                    "homepage": "https://www.drupal.org/user/107158"
-                }
-            ],
-            "description": "Provides expanded entity APIs, which will be moved to Drupal core one day.",
-            "homepage": "https://www.drupal.org/project/entity",
-            "support": {
-                "source": "https://git.drupalcode.org/project/entity",
-                "issues": "https://www.drupal.org/project/issues/entity"
             }
         },
         {
